@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services &amp; Treatments | Harmony Spring Acupuncture & Chinese Medicine</title>
+  <meta name="description" content="Explore our seven specialized holistic services: Acupuncture Therapy, Fire Cupping, Herbal Medicine Dispensary, Moxibustion, and Comprehensive TCM Consultations.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231b5e50'><circle cx='12' cy='12' r='10'/><path d='M12 2a10 10 0 0 0 0 20 5 5 0 0 0 0-10 5 5 0 0 1 0-10z' fill='%23f9f8f5'/></svg>">
+</head>
+<body>
+
+  <!-- Sticky Header Wrapper (Notice Bar + Main Navigation) -->
+  <div class="sticky-header-wrapper">
+
+    <!-- Header & Navigation -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo-brand">
+            <span class="tcm-seal" title="Harmony">和</span>
+            <div class="logo-text-wrap">
+              <span class="logo-title">Harmony Spring</span>
+              <span class="logo-subtitle">Acupuncture &amp; Chinese Medicine</span>
+            </div>
+          </a>
+
+          <ul class="nav-links">
+            <li class="nav-item-dropdown">
+              <a href="index.html" class="nav-link">
+                Home
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </a>
+              <div class="nav-dropdown-menu">
+                <a href="index.html" class="dropdown-item">Classical Clinic</a>
+                <a href="home-2.html" class="dropdown-item">Modern Longevity</a>
+              </div>
+            </li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link active">Services</a></li>
+            <li><a href="practitioners.html" class="nav-link">Practitioners</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="faq.html" class="nav-link">FAQ</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <div class="nav-controls">
+              <button class="nav-pill-btn dir-toggle-btn" id="dirToggleBtn" type="button" title="Switch text direction (LTR / RTL)" aria-label="Toggle text direction">
+                <span class="dir-opt active" data-dir="ltr">LTR</span>
+                <span class="dir-divider">/</span>
+                <span class="dir-opt" data-dir="rtl">RTL</span>
+              </button>
+              <button class="nav-icon-btn theme-toggle-btn" id="themeToggleBtn" type="button" title="Switch to Dark Mode" aria-label="Toggle dark mode">
+                <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+              </button>
+            </div>
+            <a href="dashboard.html" class="nav-portal-btn" id="navPortalBtn" title="Sarah's Portal">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span class="nav-portal-text">Sarah's Portal</span>
+            </a>
+            <a href="booking.html" class="btn btn-primary btn-sm btn-book-nav">Book Appointment</a>
+            <button type="button" class="nav-auth-icon-btn" id="navAuthIconBtn" title="Account Action" aria-label="Account Action">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
+            </button>
+            <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">&#9776;</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <div class="logo-brand">
+        <span class="tcm-seal">和</span>
+        <div class="logo-text-wrap">
+          <span class="logo-title" style="font-size:1.3rem;">Harmony Spring</span>
+          <span class="logo-subtitle" style="font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--c-sage-600);font-weight:600;">Acupuncture &amp; Chinese Medicine</span>
+        </div>
+      </div>
+      <button class="mobile-nav-close" aria-label="Close Navigation Menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html">Classical Clinic</a></li>
+      <li><a href="home-2.html">Modern Longevity</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services &amp; Treatments</a></li>
+      <li><a href="practitioners.html">Practitioners</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div id="mobileNavAuthSlot" style="margin-top:auto;">
+      <a href="login.html" class="btn btn-secondary btn-block" style="margin-bottom:0.8rem;">Patient Login</a>
+      <a href="booking.html" class="btn btn-primary btn-block">Book Appointment</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Header Hero -->
+    <section class="section" style="padding:4rem 0 3rem;background:radial-gradient(circle at 50% 10%, rgba(203, 217, 206, 0.4) 0%, rgba(249, 248, 245, 0.95) 100%);">
+      <div class="container container-narrow" style="text-align:center;">
+        <span class="tcm-badge" style="margin-bottom:1rem;">Holistic Clinical Services</span>
+        <h1 style="margin-bottom:1.2rem;">Traditional Therapies for Modern Vitality</h1>
+        <p style="font-size:1.15rem;color:var(--c-ink-body);line-height:1.7;">
+          Every modality is administered by licensed clinical specialists with rigorous safety standards. Discover how our therapies relieve pain, reduce stress, and restore organic balance.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Directory & Filter Section -->
+    <section class="section">
+      <div class="container">
+        <!-- Filter Tabs -->
+        <div class="services-filter-bar" id="servicesFilterBar" role="tablist" aria-label="Clinical Treatment Categories">
+          <button type="button" class="filter-btn active" data-category="all" role="tab" aria-selected="true">All Treatments (7)</button>
+          <button type="button" class="filter-btn" data-category="Acupuncture" role="tab" aria-selected="false">Acupuncture</button>
+          <button type="button" class="filter-btn" data-category="Bodywork" role="tab" aria-selected="false">Bodywork &amp; Cupping</button>
+          <button type="button" class="filter-btn" data-category="Herbal Medicine" role="tab" aria-selected="false">Herbal Medicine</button>
+          <button type="button" class="filter-btn" data-category="Consultation" role="tab" aria-selected="false">Consultations</button>
+        </div>
+
+        <!-- Live Results Count Feedback -->
+        <div class="services-filter-feedback" id="servicesFilterFeedback" aria-live="polite">
+          Showing all <strong>7</strong> clinical treatments
+        </div>
+
+        <!-- Services Cards Grid (Dynamic Loaded from Backend / Resilient Fallback) -->
+        <div class="services-grid" id="servicesListGrid" aria-live="polite">
+          <div class="services-loading-state" id="servicesLoadingIndicator" style="grid-column:1/-1;text-align:center;padding:4rem 1rem;">
+            <div class="tcm-spinner" style="margin:0 auto 1.2rem;"></div>
+            <p style="font-size:1.05rem;color:var(--c-ink-dark);font-weight:600;margin-bottom:0.3rem;">Loading Clinical Treatments...</p>
+            <span style="font-size:0.88rem;color:var(--c-ink-muted);">Retrieving authentic Chinese Medicine modalities</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation Process Banner -->
+    <section class="section section-sage-soft">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:3.5rem;align-items:center;" class="hero-grid">
+          <div>
+            <span class="tcm-badge" style="margin-bottom:1rem;">Individualized Care</span>
+            <h2 style="margin-bottom:1.2rem;">Unsure Which Treatment Is Best for You?</h2>
+            <p style="margin-bottom:1.2rem;line-height:1.7;">
+              Because Traditional Chinese Medicine diagnoses patterns rather than isolated labels, many patients benefit most from a combination of therapies—such as acupuncture paired with cupping, or botanical prescriptions alongside dietary advice.
+            </p>
+            <p style="margin-bottom:1.8rem;line-height:1.7;">
+              During your <strong>Traditional Chinese Medicine Consultation</strong>, our senior practitioners conduct a complete pulse and tongue evaluation to design a treatment roadmap tailored specifically to your constitution.
+            </p>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+              <a href="booking.html?service=tcm-consultation" class="btn btn-primary">Book Initial Consultation</a>
+              <a href="contact.html" class="btn btn-secondary">Ask Our Clinical Coordinator</a>
+            </div>
+          </div>
+          <div>
+            <div style="border-radius:24px;overflow:hidden;box-shadow:var(--shadow-lg);border:6px solid #fff;">
+              <img src="assets/images/tcm_consultation.jpg" alt="Pulse diagnosis and health consultation" width="800" height="533">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-content">
+          <h2 class="cta-banner-title">Step Toward Natural Balance</h2>
+          <p class="cta-banner-desc">
+            Appointments available Monday through Saturday. Clean, serene, unhurried care.
+          </p>
+          <div class="cta-banner-actions">
+            <a href="booking.html" class="btn btn-terracotta btn-lg">Book Your Appointment Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="logo-brand" style="margin-bottom:1.1rem;">
+            <span class="tcm-seal">和</span>
+            <div class="logo-text-wrap">
+              <span class="logo-title" style="color:#ffffff;font-size:1.55rem;">Harmony Spring</span>
+              <span class="logo-subtitle" style="color:var(--c-sage-300);font-size:0.7rem;letter-spacing:0.09em;text-transform:uppercase;font-weight:600;margin-top:2px;">Acupuncture &amp; Chinese Medicine</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            A sanctuary of Traditional Chinese Medicine dedicated to natural wellness, balance, and personalized patient care through ancient wisdom and modern integrity.
+          </p>
+          <div class="footer-info-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>742 Bamboo Grove Way, Suite 200, San Francisco, CA 94108</span>
+          </div>
+          <div class="footer-info-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(555) 234-HEAL (4325)</span>
+          </div>
+          <div class="footer-social-wrap">
+            <span class="footer-social-label">Follow Us</span>
+            <div class="footer-social-links">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow Harmony Spring on Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow Harmony Spring on Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Subscribe to Harmony Spring on YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.2C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.5 15.57V8.43L15.82 12 9.5 15.57z"/></svg>
+              </a>
+              <a href="https://yelp.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Find Harmony Spring on Yelp" title="Yelp">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.66 12.01l-4.75-2.09c-.48-.21-.69-.77-.47-1.25l.89-1.92c.22-.48.78-.69 1.26-.47l4.7 2.21c.42.2.56.7.32 1.1l-1.07 1.95c-.17.31-.56.45-.88.47zm.42 1.63l.35 5.17c.04.52-.36.97-.88 1.01l-2.1.14c-.52.04-.97-.36-1.01-.88l-.4-5.18c-.04-.46.3-.85.74-.89l2.22-.15c.44-.03.88.33.91.78zm1.96-.34l4.5 2.6c.45.26.6.84.34 1.29l-1.06 1.83c-.26.45-.84.6-1.29.34l-4.47-2.65c-.39-.23-.5-.73-.25-1.12l1.24-1.85c.2-.3.6-.42.99-.44zm.64-1.95l4.89-.98c.51-.1.93.3.93.82v2.11c0 .52-.42.94-.94.94l-4.9-.1c-.46 0-.82-.36-.83-.82l-.04-2.22c0-.4.36-.75.76-.75zm-1.89-1.93l1.83-4.84c.18-.49.73-.74 1.22-.55l1.97.75c.49.19.74.74.55 1.23l-1.89 4.82c-.17.43-.66.62-1.07.43l-2.07-.88c-.37-.16-.54-.6-.54-.96z"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Connect with Harmony Spring on LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Treatments</h4>
+          <ul class="footer-links">
+            <li><a href="service-detail.html?service=acupuncture">Acupuncture Therapy</a></li>
+            <li><a href="service-detail.html?service=cupping">Cupping Therapy</a></li>
+            <li><a href="service-detail.html?service=tcm-consultation">TCM Comprehensive Intake</a></li>
+            <li><a href="service-detail.html?service=herbal-medicine">Herbal Dispensary</a></li>
+            <li><a href="service-detail.html?service=moxibustion">Moxibustion Therapy</a></li>
+            <li><a href="service-detail.html?service=wellness-consultation">Wellness Consultation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Clinic Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Classical Clinic</a></li>
+            <li><a href="home-2.html">Modern Longevity</a></li>
+            <li><a href="about.html">About the Clinic</a></li>
+            <li><a href="practitioners.html">Our Practitioners</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+            <li><a href="login.html">Patient Portal Login</a></li>
+            <li><a href="register.html">New Patient Registration</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+            <li><a href="contact.html">Contact &amp; Directions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Seasonal TCM Journal</h4>
+          <p style="font-size:0.88rem;color:var(--c-sage-300);margin-bottom:1rem;line-height:1.6;">
+            Subscribe to our monthly newsletter for seasonal food energetics, Qi Gong exercises, and natural wellness tips.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-submit">Subscribe</button>
+          </form>
+          <div style="margin-top:1.2rem;font-size:0.82rem;color:var(--c-sage-400);">
+            Clinic Hours:<br>
+            Mon – Fri: 8:30 AM – 6:00 PM<br>
+            Sat: 9:00 AM – 3:00 PM &bull; Sun: Closed
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-box">
+        <strong>Medical Disclaimer:</strong> The information provided on this website is for educational and informational purposes only and is not intended as a substitute for professional medical advice, diagnosis, or treatment. Traditional Chinese Medicine and acupuncture are designed to support and complement your overall healthcare. We make no claims of guaranteed cures. Always consult a licensed healthcare professional for serious medical conditions.
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Harmony Spring Acupuncture &amp; Chinese Medicine. All rights reserved.</div>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="privacy.html" style="color:inherit;">Privacy Policy (HIPAA)</a>
+          <a href="terms.html" style="color:inherit;">Terms &amp; Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('servicesListGrid');
+      const filterBtns = document.querySelectorAll('.services-filter-bar .filter-btn');
+      const feedbackEl = document.getElementById('servicesFilterFeedback');
+      const allFilterBtn = document.querySelector('.services-filter-bar .filter-btn[data-category="all"]');
+      let allServices = [];
+      let currentCategory = 'all';
+
+      // Meaningful alt text dictionary for authentic clinical healthcare photography
+      const ALT_TEXTS = {
+        'acupuncture': 'Authentic serene acupuncture needle placement in peaceful treatment room',
+        'follow-up': 'Licensed acupuncturist gently treating patient with fine needles during follow-up session',
+        'cupping': 'Therapeutic glass fire cupping therapy applied along meridian pathways',
+        'herbal-medicine': 'Traditional Chinese herbal medicine dispensary counter with medicinal herbs and apothecary tools',
+        'pain-management': 'Targeted neuro-meridian acupuncture treatment for chronic musculoskeletal pain relief',
+        'stress-wellness': 'Calming Shen Men acupuncture and restorative clinical relaxation therapy',
+        'tcm-consultation': 'Senior TCM physician conducting in-depth diagnostic tongue and pulse consultation'
+      };
+
+      function getAltText(service) {
+        return ALT_TEXTS[service.id] || `${service.name} clinical treatment at Harmony Spring TCM Clinic`;
+      }
+
+      function getCategoryBadgeLabel(category) {
+        if (!category) return '';
+        if (category === 'Bodywork') return 'Bodywork & Cupping';
+        return category;
+      }
+
+      function getShortThumbLabel(title, idx) {
+        if (!title) return `View ${idx + 1}`;
+        const t = title.toLowerCase();
+        if (t.includes('pulse')) return 'Pulse';
+        if (t.includes('tongue')) return 'Tongue';
+        if (t.includes('room') || t.includes('suite')) return 'Suite';
+        if (t.includes('meridian') || t.includes('map')) return 'Meridians';
+        if (t.includes('gua sha')) return 'Gua Sha';
+        if (t.includes('moxa') || t.includes('moxibustion')) return 'Moxa';
+        if (t.includes('apothecary') || t.includes('scale')) return 'Apothecary';
+        if (t.includes('granule') || t.includes('prep') || t.includes('infusion')) return 'Herbal Prep';
+        if (t.includes('meditation') || t.includes('sleep') || t.includes('shen')) return 'Calm Space';
+        if (t.includes('lifestyle') || t.includes('food') || t.includes('energetics')) return 'Lifestyle';
+        if (t.includes('diagnost')) return 'Diagnostics';
+        return title.split(' ')[0] || `View ${idx + 1}`;
+      }
+
+      function matchesCategory(service, targetCat) {
+        if (!targetCat || targetCat === 'all') return true;
+        const sCat = (service.category || '').toLowerCase();
+        const sTags = Array.isArray(service.tags) ? service.tags.map(t => t.toLowerCase()) : [];
+        const target = targetCat.toLowerCase();
+        
+        if (target.includes('acupunct')) {
+          return sCat.includes('acupunct') || sTags.includes('acupuncture');
+        }
+        if (target.includes('bodywork') || target.includes('cupping')) {
+          return sCat.includes('bodywork') || sCat.includes('cupping') || sTags.includes('bodywork') || sTags.includes('cupping');
+        }
+        if (target.includes('herb')) {
+          return sCat.includes('herb') || sTags.includes('herbal medicine') || sTags.includes('herbs');
+        }
+        if (target.includes('consult')) {
+          return sCat.includes('consult') || sTags.includes('consultation');
+        }
+        return sCat.includes(target) || sTags.includes(target);
+      }
+
+      function updateFeedbackText(filteredCount, cat) {
+        if (!feedbackEl) return;
+        const countStr = `<strong>${filteredCount}</strong>`;
+        if (cat === 'all') {
+          feedbackEl.innerHTML = `Showing all ${countStr} clinical treatments`;
+        } else if (cat.toLowerCase().includes('acupunct')) {
+          feedbackEl.innerHTML = `Showing ${countStr} acupuncture ${filteredCount === 1 ? 'treatment' : 'treatments'}`;
+        } else if (cat.toLowerCase().includes('bodywork') || cat.toLowerCase().includes('cupping')) {
+          feedbackEl.innerHTML = `Showing ${countStr} bodywork & cupping ${filteredCount === 1 ? 'treatment' : 'treatments'}`;
+        } else if (cat.toLowerCase().includes('herb')) {
+          feedbackEl.innerHTML = `Showing ${countStr} herbal medicine ${filteredCount === 1 ? 'service' : 'services'}`;
+        } else if (cat.toLowerCase().includes('consult')) {
+          feedbackEl.innerHTML = `Showing ${countStr} clinical ${filteredCount === 1 ? 'consultation' : 'consultations'}`;
+        } else {
+          feedbackEl.innerHTML = `Showing ${countStr} matching ${filteredCount === 1 ? 'treatment' : 'treatments'}`;
+        }
+      }
+
+      function renderServices(servicesToDisplay) {
+        if (!servicesToDisplay || servicesToDisplay.length === 0) {
+          grid.innerHTML = `
+            <div style="grid-column:1/-1;text-align:center;padding:3.5rem 1.5rem;background:var(--c-cream-card);border:1px solid var(--c-border);border-radius:var(--radius-lg);">
+              <p style="color:var(--c-ink-muted);font-size:1.05rem;margin-bottom:1rem;">No treatments found matching this category.</p>
+              <button type="button" class="btn btn-secondary btn-sm" id="resetFilterBtn">View All Treatments</button>
+            </div>
+          `;
+          const resetBtn = document.getElementById('resetFilterBtn');
+          if (resetBtn) {
+            resetBtn.addEventListener('click', () => {
+              if (allFilterBtn) allFilterBtn.click();
+            });
+          }
+          return;
+        }
+
+        grid.innerHTML = servicesToDisplay.map((s, idx) => {
+          const mainImgSrc = (s.image || '').replace(/^\/+/, '');
+          const altText = getAltText(s);
+          const supporting = Array.isArray(s.supportingImages) ? s.supportingImages : [];
+          
+          return `
+          <article class="service-card" data-category="${s.category}" data-id="${s.id}" style="animation: serviceFadeIn 0.35s ease both; animation-delay: ${idx * 0.05}s;">
+            <div class="service-card-visual">
+              <div class="service-card-media">
+                <img 
+                  src="${mainImgSrc}" 
+                  alt="${altText}" 
+                  loading="lazy"
+                  class="service-main-img"
+                  id="mainImg_${s.id}"
+                  onerror="this.onerror=null; this.src='assets/images/hero_acupuncture.jpg';"
+                >
+                <span class="service-category-tag">${getCategoryBadgeLabel(s.category)}</span>
+                <span class="service-price-tag">${s.price} &bull; ${s.duration}</span>
+              </div>
+
+              ${supporting.length > 0 ? `
+                <div class="service-thumbnails-strip" role="group" aria-label="Photo gallery views for ${s.name}">
+                  <button type="button" class="thumb-pill active" data-card-id="${s.id}" data-src="${mainImgSrc}" data-alt="${altText}" title="Main View: ${s.name}">
+                    <img src="${mainImgSrc}" alt="Main view thumbnail" width="24" height="20" loading="lazy">
+                    <span>Main</span>
+                  </button>
+                  ${supporting.map((sup, sIdx) => {
+                    const supSrc = (sup.src || '').replace(/^\/+/, '');
+                    const label = getShortThumbLabel(sup.title, sIdx);
+                    return `
+                      <button type="button" class="thumb-pill" data-card-id="${s.id}" data-src="${supSrc}" data-alt="${sup.title}" title="${sup.title}">
+                        <img src="${supSrc}" alt="${sup.title} thumbnail" width="24" height="20" loading="lazy">
+                        <span>${label}</span>
+                      </button>
+                    `;
+                  }).join('')}
+                </div>
+              ` : ''}
+
+              ${(Array.isArray(s.additionalImages) && s.additionalImages.length > 0) || s.id === 'tcm-consultation' ? `
+                <div class="consultation-dual-showcase" role="region" aria-label="Personalized Health Consultation Clinical Photography">
+                  <div class="consultation-dual-item" data-card-id="${s.id}" data-src="assets/images/pulse_diagnosis.jpg" data-alt="Chinese medicine practitioner checking a patient's pulse during a professional consultation" title="TCM Pulse Diagnosis">
+                    <img 
+                      src="assets/images/pulse_diagnosis.jpg" 
+                      alt="Chinese medicine practitioner checking a patient's pulse during a professional consultation" 
+                      class="consultation-dual-img"
+                      loading="lazy"
+                      onerror="this.onerror=null; this.src='assets/images/hero_acupuncture.jpg';"
+                    >
+                  </div>
+                  <div class="consultation-dual-item" data-card-id="${s.id}" data-src="assets/images/wellness_consultation.jpg" data-alt="Practitioner discussing a personalized wellness treatment plan with a patient, with traditional Chinese herbs visible in the clinic" title="Holistic Wellness Consultation">
+                    <img 
+                      src="assets/images/wellness_consultation.jpg" 
+                      alt="Practitioner discussing a personalized wellness treatment plan with a patient, with traditional Chinese herbs visible in the clinic" 
+                      class="consultation-dual-img"
+                      loading="lazy"
+                      onerror="this.onerror=null; this.src='assets/images/hero_acupuncture.jpg';"
+                    >
+                  </div>
+                </div>
+              ` : ''}
+            </div>
+
+            <div class="service-card-body">
+              <h3 class="service-card-title">${s.name}</h3>
+              <p class="service-card-desc">${s.shortDesc}</p>
+              
+              <div class="service-card-benefits" style="margin-bottom:1.1rem;">
+                <strong style="font-size:0.84rem;color:var(--c-jade-600);display:block;margin-bottom:0.4rem;font-weight:600;">Key Benefits:</strong>
+                <ul class="service-benefits-list">
+                  ${(s.benefits || []).slice(0, 3).map(b => `
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="benefit-check-icon"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>${b}</span>
+                    </li>
+                  `).join('')}
+                </ul>
+              </div>
+
+              <div class="service-meta-row">
+                <span class="service-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  <span>${s.duration}</span>
+                </span>
+                <span class="service-meta-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <span class="service-meta-price">${s.price}</span>
+                </span>
+              </div>
+
+              <div class="service-card-actions">
+                <a href="service-detail.html?service=${encodeURIComponent(s.id)}" class="btn btn-secondary btn-sm" id="viewDetail_${s.id}">View Details</a>
+                <a href="booking.html?service=${encodeURIComponent(s.id)}" class="btn btn-primary btn-sm" id="bookBtn_${s.id}">Book Appointment</a>
+              </div>
+            </div>
+          </article>
+          `;
+        }).join('');
+
+        // Attach click & hover events to thumbnail pills
+        const thumbPills = grid.querySelectorAll('.thumb-pill');
+        thumbPills.forEach(pill => {
+          const activatePill = () => {
+            const cardId = pill.dataset.cardId;
+            const newSrc = pill.dataset.src;
+            const newAlt = pill.dataset.alt;
+            const mainImg = document.getElementById(`mainImg_${cardId}`);
+            if (mainImg && newSrc && mainImg.getAttribute('src') !== newSrc) {
+              mainImg.style.opacity = '0.7';
+              setTimeout(() => {
+                mainImg.src = newSrc;
+                if (newAlt) mainImg.alt = newAlt;
+                mainImg.style.opacity = '1';
+              }, 120);
+            }
+            // Update active state across pills in this card
+            const card = pill.closest('.service-card');
+            if (card) {
+              card.querySelectorAll('.thumb-pill').forEach(p => p.classList.remove('active'));
+              pill.classList.add('active');
+            }
+          };
+
+          pill.addEventListener('click', (e) => {
+            e.preventDefault();
+            activatePill();
+          });
+          pill.addEventListener('mouseenter', activatePill);
+        });
+
+        // Attach click handler to consultation dual items to preview in main card image
+        const dualItems = grid.querySelectorAll('.consultation-dual-item');
+        dualItems.forEach(item => {
+          item.addEventListener('click', () => {
+            const cardId = item.dataset.cardId;
+            const newSrc = item.dataset.src;
+            const newAlt = item.dataset.alt;
+            const mainImg = document.getElementById(`mainImg_${cardId}`);
+            if (mainImg && newSrc && mainImg.getAttribute('src') !== newSrc) {
+              mainImg.style.opacity = '0.7';
+              setTimeout(() => {
+                mainImg.src = newSrc;
+                if (newAlt) mainImg.alt = newAlt;
+                mainImg.style.opacity = '1';
+              }, 120);
+            }
+            // If matching thumbnail pill exists, activate it
+            const card = item.closest('.service-card');
+            if (card && newSrc) {
+              const matchingPill = card.querySelector(`.thumb-pill[data-src="${newSrc}"]`);
+              if (matchingPill) {
+                card.querySelectorAll('.thumb-pill').forEach(p => p.classList.remove('active'));
+                matchingPill.classList.add('active');
+              }
+            }
+          });
+        });
+      }
+
+      function applyFilter(cat) {
+        currentCategory = cat;
+        filterBtns.forEach(b => {
+          const isMatch = (b.dataset.category || '').toLowerCase() === cat.toLowerCase();
+          b.classList.toggle('active', isMatch);
+          b.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+        });
+
+        const filtered = allServices.filter(s => matchesCategory(s, cat));
+        grid.setAttribute('data-count', filtered.length);
+        renderServices(filtered);
+        updateFeedbackText(filtered.length, cat);
+      }
+
+      async function loadServices() {
+        // Show loading indicator
+        grid.innerHTML = `
+          <div class="services-loading-state" id="servicesLoadingIndicator" style="grid-column:1/-1;text-align:center;padding:4.5rem 1.5rem;">
+            <div class="tcm-spinner" style="margin:0 auto 1.2rem;"></div>
+            <p style="font-size:1.1rem;color:var(--c-ink-dark);font-weight:600;margin-bottom:0.3rem;">Loading Clinical Treatments...</p>
+            <p style="font-size:0.88rem;color:var(--c-ink-muted);">Retrieving modalities from Harmony Spring clinic database</p>
+          </div>
+        `;
+        if (feedbackEl) {
+          feedbackEl.innerHTML = 'Connecting to clinic treatment directory...';
+        }
+
+        try {
+          const res = await API.services.getAll();
+          allServices = (res && res.services && Array.isArray(res.services)) ? res.services : [];
+
+          if (!allServices || allServices.length === 0) {
+            throw new Error('No clinical services found in database');
+          }
+
+          // Update All Treatments tab label with actual count
+          if (allFilterBtn) {
+            allFilterBtn.textContent = `All Treatments (${allServices.length})`;
+          }
+
+          // Render with active filter
+          applyFilter(currentCategory);
+        } catch (err) {
+          console.error('Failed to load services:', err);
+          grid.innerHTML = `
+            <div class="services-error-state" id="servicesErrorNotice" style="grid-column:1/-1;text-align:center;padding:3rem 1.5rem;background:var(--c-cream-card);border:1px solid var(--c-border);border-radius:var(--radius-lg);max-width:520px;margin:1.5rem auto;box-shadow:var(--shadow-sm);">
+              <div style="width:48px;height:48px;border-radius:50%;background:rgba(201, 59, 43, 0.12);display:inline-flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c93b2b" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <h3 style="color:var(--c-ink-dark);margin-bottom:0.6rem;font-size:1.35rem;">Unable to Load Treatments</h3>
+              <p style="color:var(--c-ink-body);font-size:0.92rem;line-height:1.6;margin-bottom:1.5rem;">
+                Failed to load services. Both the clinic API server and local backup dataset could not be reached. Please check your network connection and retry.
+              </p>
+              <button type="button" class="btn btn-primary btn-sm" id="retryServicesLoadBtn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                Retry Loading Treatments
+              </button>
+            </div>
+          `;
+          if (feedbackEl) {
+            feedbackEl.innerHTML = '<span style="color:#c93b2b;">Connection error. Please retry.</span>';
+          }
+          const retryBtn = document.getElementById('retryServicesLoadBtn');
+          if (retryBtn) {
+            retryBtn.addEventListener('click', loadServices);
+          }
+        }
+      }
+
+      // Filter button event listeners
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const cat = btn.dataset.category || 'all';
+          applyFilter(cat);
+        });
+      });
+
+      // Initial load
+      loadServices();
+    });
+  </script>
+</body>
+</html>

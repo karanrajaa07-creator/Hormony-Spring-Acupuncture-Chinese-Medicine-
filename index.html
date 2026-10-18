@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony Spring Acupuncture & Chinese Medicine | Traditional Clinic</title>
+  <meta name="description" content="Experience ancient Chinese healing traditions, gentle acupuncture, cupping therapy, and customized herbal medicine for lasting wellness, pain relief, and balance.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231b5e50'><circle cx='12' cy='12' r='10'/><path d='M12 2a10 10 0 0 0 0 20 5 5 0 0 0 0-10 5 5 0 0 1 0-10z' fill='%23f9f8f5'/></svg>">
+</head>
+<body>
+
+  <!-- Sticky Header Wrapper (Notice Bar + Main Navigation) -->
+  <div class="sticky-header-wrapper">
+
+    <!-- Header & Navigation -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo-brand">
+            <span class="tcm-seal" title="Harmony">和</span>
+            <div class="logo-text-wrap">
+              <span class="logo-title">Harmony Spring</span>
+              <span class="logo-subtitle">Acupuncture &amp; Chinese Medicine</span>
+            </div>
+          </a>
+
+          <ul class="nav-links">
+            <li class="nav-item-dropdown">
+              <a href="index.html" class="nav-link active">
+                Home
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </a>
+              <div class="nav-dropdown-menu">
+                <a href="index.html" class="dropdown-item active">Classical Clinic &bull;</a>
+                <a href="home-2.html" class="dropdown-item">Modern Longevity</a>
+              </div>
+            </li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="practitioners.html" class="nav-link">Practitioners</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="faq.html" class="nav-link">FAQ</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <div class="nav-controls">
+              <button class="nav-pill-btn dir-toggle-btn" id="dirToggleBtn" type="button" title="Switch text direction (LTR / RTL)" aria-label="Toggle text direction">
+                <span class="dir-opt active" data-dir="ltr">LTR</span>
+                <span class="dir-divider">/</span>
+                <span class="dir-opt" data-dir="rtl">RTL</span>
+              </button>
+              <button class="nav-icon-btn theme-toggle-btn" id="themeToggleBtn" type="button" title="Switch to Dark Mode" aria-label="Toggle dark mode">
+                <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+              </button>
+            </div>
+            <a href="dashboard.html" class="nav-portal-btn" id="navPortalBtn" title="Sarah's Portal">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span class="nav-portal-text">Sarah's Portal</span>
+            </a>
+            <a href="booking.html" class="btn btn-primary btn-sm btn-book-nav">Book Appointment</a>
+            <button type="button" class="nav-auth-icon-btn" id="navAuthIconBtn" title="Account Action" aria-label="Account Action">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
+            </button>
+            <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">&#9776;</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <div class="logo-brand">
+        <span class="tcm-seal">和</span>
+        <div class="logo-text-wrap">
+          <span class="logo-title" style="font-size:1.3rem;">Harmony Spring</span>
+          <span class="logo-subtitle" style="font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--c-sage-600);font-weight:600;">Acupuncture &amp; Chinese Medicine</span>
+        </div>
+      </div>
+      <button class="mobile-nav-close" aria-label="Close Navigation Menu">&times;</button>
+    </div>
+    <div class="mobile-nav-controls" style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0;margin-bottom:1.25rem;border-bottom:1px solid var(--c-border);">
+      <span style="font-size:0.85rem;font-weight:600;color:var(--c-ink-muted);">Display &amp; Language:</span>
+      <div class="nav-controls">
+        <button class="nav-pill-btn dir-toggle-btn" type="button" title="Switch text direction" aria-label="Toggle text direction">
+          <span class="dir-opt active" data-dir="ltr">LTR</span>
+          <span class="dir-divider">/</span>
+          <span class="dir-opt" data-dir="rtl">RTL</span>
+        </button>
+        <button class="nav-icon-btn theme-toggle-btn" type="button" title="Switch to Dark Mode" aria-label="Toggle dark mode">
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="active">Classical Clinic</a></li>
+      <li><a href="home-2.html">Modern Longevity</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services &amp; Treatments</a></li>
+      <li><a href="practitioners.html">Practitioners</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div id="mobileNavAuthSlot" style="margin-top:auto;">
+      <a href="login.html" class="btn btn-secondary btn-block" style="margin-bottom:0.8rem;">Patient Login</a>
+      <a href="booking.html" class="btn btn-primary btn-block">Book Appointment</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge-row">
+              <span class="tcm-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                Traditional Wisdom &bull; Evidence-Supported Care
+              </span>
+            </div>
+            <h1 class="hero-headline">
+              Restore Your Balance Through the Wisdom of <em>Traditional Healing.</em>
+            </h1>
+            <p class="hero-subhead">
+              Immerse yourself in gentle, authentic Traditional Chinese Medicine. Through precision acupuncture, restorative cupping, and personalized botanical formulations, we awaken your body’s natural ability to heal from within.
+            </p>
+            <div class="hero-cta-group">
+              <a href="booking.html" class="btn btn-primary btn-lg">Book an Appointment</a>
+              <a href="services.html" class="btn btn-secondary btn-lg">Explore Treatments</a>
+            </div>
+            <div class="hero-highlights">
+              <div class="hero-stat-item">
+                <strong>16+</strong>
+                <span>Years Clinical Experience</span>
+              </div>
+              <div class="hero-stat-item">
+                <strong>10,000+</strong>
+                <span>Treatments Administered</span>
+              </div>
+              <div class="hero-stat-item">
+                <strong>100%</strong>
+                <span>Single-Use Sterile Needles</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual-wrap">
+            <div class="hero-main-img-card">
+              <img src="assets/images/hero_acupuncture.jpg" alt="Acupuncture therapy in serene clinic room" width="800" height="533">
+            </div>
+            <div class="floating-trust-card">
+              <div class="floating-trust-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong style="font-size:0.92rem;color:var(--c-ink-dark);display:block;">Licensed Board Certified</strong>
+                <span style="font-size:0.8rem;color:var(--c-ink-muted);">DACM &amp; NCCAOM Diplomates</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clinic Philosophy Section -->
+    <section class="section section-cream-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="tcm-badge">Our Healing Philosophy</span>
+          <h2 class="section-title">An Ecological Approach to Your Whole Being</h2>
+          <p class="section-desc">
+            In Traditional Chinese Medicine, wellness is not merely the absence of disease—it is a harmonious dance between Yin and Yang, Qi flow, and the Five Elements. We treat the whole person, not just isolated symptoms.
+          </p>
+        </div>
+
+        <div class="concept-grid">
+          <div class="concept-card">
+            <div class="concept-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 0 0 20 5 5 0 0 0 0-10 5 5 0 0 1 0-10z"/></svg>
+            </div>
+            <h3>Yin &amp; Yang Equilibrium</h3>
+            <p>Every physiological state requires balance between activity and rest, warmth and cooling. We identify constitutional excesses and depletions to guide you back to center.</p>
+          </div>
+
+          <div class="concept-card">
+            <div class="concept-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Meridian &amp; Qi Vitality</h3>
+            <p>Twelve primary meridian channels coordinate blood circulation, nerve conduction, and immune defenses. Precision acupuncture removes blockages and restores uninterrupted flow.</p>
+          </div>
+
+          <div class="concept-card">
+            <div class="concept-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Custom Botanical Synergy</h3>
+            <p>Unlike single-ingredient supplements, classical Chinese herbal formulas are balanced symphonies compounded to nourish deep organ systems without harsh side effects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Treatments Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="tcm-badge">Our Treatments</span>
+          <h2 class="section-title">Root-Cause Holistic Therapies</h2>
+          <p class="section-desc">
+            Each modality is selected according to your unique diagnostic pulse, tongue evaluation, and clinical presentation.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Acupuncture -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/hero_acupuncture.jpg" alt="Acupuncture Therapy" loading="lazy">
+              <span class="service-category-tag">Acupuncture</span>
+              <span class="service-price-tag">$130 &bull; 60 Min</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Acupuncture Therapy</h3>
+              <p class="service-card-desc">
+                Sterile, hair-thin needle insertion along meridian pathways to relieve chronic pain, ease nervous tension, and reset autonomic homeostasis.
+              </p>
+              <div class="service-meta-row">
+                <span>Relieves pain &bull; Calms stress</span>
+                <span>Session: 60 mins</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="service-detail.html?service=acupuncture" class="btn btn-secondary btn-sm">View Details</a>
+                <a href="booking.html?service=acupuncture" class="btn btn-primary btn-sm">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: Cupping -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/cupping_therapy.jpg" alt="Cupping Therapy" loading="lazy">
+              <span class="service-category-tag">Bodywork</span>
+              <span class="service-price-tag">$85 &bull; 45 Min</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Cupping Therapy</h3>
+              <p class="service-card-desc">
+                Traditional fire cupping creates gentle negative pressure to decompress restricted fascia, increase microcirculation, and release deep tension.
+              </p>
+              <div class="service-meta-row">
+                <span>Decompresses fascia &bull; Clears stagnation</span>
+                <span>Session: 45 mins</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="service-detail.html?service=cupping" class="btn btn-secondary btn-sm">View Details</a>
+                <a href="booking.html?service=cupping" class="btn btn-primary btn-sm">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3: Herbal Medicine -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/chinese_herbal_medicine.jpg" alt="Herbal Medicine Consultation" loading="lazy">
+              <span class="service-category-tag">Herbal Medicine</span>
+              <span class="service-price-tag">$95 &bull; 40 Min</span>
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-card-title">Herbal Medicine Consultation</h3>
+              <p class="service-card-desc">
+                Custom botanical formulations prepared from third-party certified granules to address internal deficiencies, hormonal shifts, and digestive balance.
+              </p>
+              <div class="service-meta-row">
+                <span>Digestive health &bull; Hormonal harmony</span>
+                <span>Session: 40 mins</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="service-detail.html?service=herbal-medicine" class="btn btn-secondary btn-sm">View Details</a>
+                <a href="booking.html?service=herbal-medicine" class="btn btn-primary btn-sm">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:3.5rem;">
+          <a href="services.html" class="btn btn-secondary btn-lg">Explore All 7 Clinical Services &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- First Visit Expectations Section -->
+    <section class="section section-sage-soft">
+      <div class="container">
+        <div class="section-header">
+          <span class="tcm-badge">Patient Journey</span>
+          <h2 class="section-title">What to Expect During Your First Visit</h2>
+          <p class="section-desc">
+            Your healing journey is transparent, gentle, and unhurried. Here is how your first 75-minute consultation unfolds.
+          </p>
+        </div>
+
+        <div class="steps-container">
+          <div class="step-card">
+            <div class="step-number-badge">01</div>
+            <h3>In-Depth Health Inquiry</h3>
+            <p>We listen closely to your complete medical story, sleep patterns, emotional landscape, and physical sensations without rushing.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">02</div>
+            <h3>Pulse &amp; Tongue Reading</h3>
+            <p>Our practitioners assess your radial pulse qualities and examine tongue coating to reveal internal organ energetics and fluid balance.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">03</div>
+            <h3>Gentle Treatment Session</h3>
+            <p>Relax on a heated linen table while hair-fine sterile needles or soothing cups are placed. Most patients drift into a restorative nap.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">04</div>
+            <h3>Personalized Care Roadmap</h3>
+            <p>Receive your personalized treatment plan, dietary guidelines, and optional botanical prescription accessible in your online Patient Portal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Practitioners Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="tcm-badge">Our Practitioners</span>
+          <h2 class="section-title">Guided by Experienced, Compassionate Healers</h2>
+          <p class="section-desc">
+            Licensed acupuncturists and board-certified Chinese herbalists with decades of verified clinical expertise.
+          </p>
+        </div>
+
+        <div class="practitioners-grid">
+          <!-- Dr. Chen -->
+          <div class="practitioner-card">
+            <div class="practitioner-media">
+              <img src="assets/images/practitioner_chen.jpg" alt="Dr. Meilin Chen" loading="lazy">
+              <span class="practitioner-badge-overlay">16 Years Verified Experience</span>
+            </div>
+            <div class="practitioner-body">
+              <h3 class="practitioner-name">Dr. Meilin Chen</h3>
+              <span class="practitioner-creds">DACM, L.Ac, Dipl. O.M. (NCCAOM)</span>
+              <span class="practitioner-specialty-pill">Pain Management &bull; Spine Health</span>
+              <p class="practitioner-bio-snippet">
+                Dr. Chen blends classical Five-Phase theory with modern neuro-functional acupuncture to resolve complex pain conditions, migraines, and nerve injuries.
+              </p>
+              <div class="practitioner-footer-meta">
+                <a href="practitioner-detail.html?id=doc_chen" class="btn btn-secondary btn-sm">View Profile</a>
+                <a href="booking.html?practitioner=doc_chen" class="btn btn-primary btn-sm">Book with Dr. Chen</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dr. Wu -->
+          <div class="practitioner-card">
+            <div class="practitioner-media">
+              <img src="assets/images/practitioner_wu.jpg" alt="Dr. Jonathan Wu" loading="lazy">
+              <span class="practitioner-badge-overlay">13 Years Verified Experience</span>
+            </div>
+            <div class="practitioner-body">
+              <h3 class="practitioner-name">Dr. Jonathan Wu</h3>
+              <span class="practitioner-creds">Dipl. O.M., MSTCM, L.Ac</span>
+              <span class="practitioner-specialty-pill">Chinese Herbal Medicine &bull; Digestion</span>
+              <p class="practitioner-bio-snippet">
+                Master herbalist trained in classical formulas. Specializes in digestive disorders, IBS, metabolic exhaustion, and immune fortification.
+              </p>
+              <div class="practitioner-footer-meta">
+                <a href="practitioner-detail.html?id=doc_wu" class="btn btn-secondary btn-sm">View Profile</a>
+                <a href="booking.html?practitioner=doc_wu" class="btn btn-primary btn-sm">Book with Dr. Wu</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dr. Zhao -->
+          <div class="practitioner-card">
+            <div class="practitioner-media">
+              <img src="assets/images/practitioner_zhao.jpg" alt="Dr. Evelyn Zhao" loading="lazy">
+              <span class="practitioner-badge-overlay">11 Years Verified Experience</span>
+            </div>
+            <div class="practitioner-body">
+              <h3 class="practitioner-name">Dr. Evelyn Zhao</h3>
+              <span class="practitioner-creds">DACM, L.Ac, FABORM</span>
+              <span class="practitioner-specialty-pill">Women's Health &bull; Fertility &bull; Sleep</span>
+              <p class="practitioner-bio-snippet">
+                Fellow of the American Board of Oriental Reproductive Medicine. Empathetic care for hormonal balance, cycle regulation, fertility, and stress-induced insomnia.
+              </p>
+              <div class="practitioner-footer-meta">
+                <a href="practitioner-detail.html?id=doc_zhao" class="btn btn-secondary btn-sm">View Profile</a>
+                <a href="booking.html?practitioner=doc_zhao" class="btn btn-primary btn-sm">Book with Dr. Zhao</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:2rem;">
+          <span class="sample-profile-notice">* Sample practitioner profiles displayed for clinic demonstration purposes.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-cream-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="tcm-badge">Patient Experiences</span>
+          <h2 class="section-title">Stories of Restored Vitality &amp; Calm</h2>
+          <p class="section-desc">
+            Sample patient feedback demonstrating authentic clinical outcomes across our treatments.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">
+              "After months of debilitating desk-work neck tension and tension headaches, Dr. Chen’s combination of acupuncture and cupping brought relief I had not felt in years. The clinic is so quiet and peaceful."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SC</div>
+              <div class="testimonial-info">
+                <strong>Sarah C.</strong>
+                <span>Cervicogenic Migraines &bull; 6 Sessions</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">
+              "Dr. Wu's herbal formula was a game changer for my sluggish digestion and constant bloating. The granules dissolve easily in warm water, and within two weeks my energy levels soared."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MV</div>
+              <div class="testimonial-info">
+                <strong>Marcus V.</strong>
+                <span>Digestive Sluggishness &bull; Herbal Care</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="star-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-quote">
+              "The patient portal is incredible—I can track every session of my treatment plan and view my herbal instructions with all precautions clearly detailed. Truly a gold standard clinic."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">EL</div>
+              <div class="testimonial-info">
+                <strong>Elena L.</strong>
+                <span>Stress &amp; Sleep Harmony &bull; 8 Sessions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:1.5rem;">
+          <span class="sample-profile-notice">* Clearly marked sample patient testimonials until authentic clinical reviews are populated.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seasonal Wisdom & Clinical Journal Section -->
+    <section class="section section-cream-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="tcm-badge">Seasonal Wisdom &amp; Articles</span>
+          <h2 class="section-title">Ancient Wisdom for Modern Living</h2>
+          <p class="section-desc">
+            Explore seasonal dietetics, five-element philosophy, and holistic lifestyle practices written by our licensed practitioners.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Article 1: Living with the Seasons -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/wellness_lifestyle.jpg" alt="Living with the Seasons" loading="lazy">
+              <span class="service-category-tag">Seasonal Wellness</span>
+              <span class="service-price-tag">7 min read</span>
+            </div>
+            <div class="service-card-body">
+              <div style="font-size:0.8rem;color:var(--c-ink-muted);margin-bottom:0.4rem;">
+                By Dr. Evelyn Zhao, DACM &bull; August 30, 2026
+              </div>
+              <h3 class="service-card-title" style="font-size:1.35rem;">Living with the Seasons: Autumn and Winter Wellness Through the Five Elements</h3>
+              <p class="service-card-desc" style="flex-grow:1;">
+                Align your daily nutrition, sleep, and emotional rhythm with nature's cycles according to the ancient Five Elements: Wood, Fire, Earth, Metal, and Water.
+              </p>
+              <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.2rem;">
+                <span style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.15rem 0.6rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;">#Five Elements</span>
+                <span style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.15rem 0.6rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;">#Seasonal Living</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="blog-detail.html?id=five-elements-seasonal-living" class="btn btn-secondary btn-block">Read Full Article &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 2: Harmonizing with Spring -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/spring_wellness.jpg" alt="Harmonizing with Spring" loading="lazy">
+              <span class="service-category-tag">Seasonal Wellness</span>
+              <span class="service-price-tag">6 min read</span>
+            </div>
+            <div class="service-card-body">
+              <div style="font-size:0.8rem;color:var(--c-ink-muted);margin-bottom:0.4rem;">
+                By Dr. Evelyn Zhao, DACM &bull; October 10, 2026
+              </div>
+              <h3 class="service-card-title" style="font-size:1.35rem;">Harmonizing with Spring: Liver Qi Rejuvenation and Green Dietetics</h3>
+              <p class="service-card-desc" style="flex-grow:1;">
+                As nature awakens in spring, learn how the Wood element and Liver meridian govern renewal, emotional release, and vibrant seasonal energy.
+              </p>
+              <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.2rem;">
+                <span style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.15rem 0.6rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;">#Spring Wellness</span>
+                <span style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.15rem 0.6rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;">#Liver Qi</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="blog-detail.html?id=spring-wood-element-liver-detox" class="btn btn-secondary btn-block">Read Full Article &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 3: Restoring the Shen -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/sleep_shen_harmony.jpg" alt="Restoring the Shen" loading="lazy">
+              <span class="service-category-tag">TCM Fundamentals</span>
+              <span class="service-price-tag">8 min read</span>
+            </div>
+            <div class="service-card-body">
+              <div style="font-size:0.8rem;color:var(--c-ink-muted);margin-bottom:0.4rem;">
+                By Dr. Meilin Chen, DACM &bull; September 8, 2026
+              </div>
+              <h3 class="service-card-title" style="font-size:1.35rem;">Restoring the Shen: A TCM Blueprint for Deep, Restorative Sleep</h3>
+              <p class="service-card-desc" style="flex-grow:1;">
+                When the Shen (spirit) wanders at night, insomnia and racing thoughts emerge. Discover acupressure points, nighttime rituals, and heart-harmonizing herbs.
+              </p>
+              <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.2rem;">
+                <span style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.15rem 0.6rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;">#Sleep Health</span>
+                <span style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.15rem 0.6rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;">#Shen Spirit</span>
+              </div>
+              <div class="service-card-actions">
+                <a href="blog-detail.html?id=sleep-insomnia-tcm-circadian-rhythm" class="btn btn-secondary btn-block">Read Full Article &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:3rem;">
+          <a href="blog.html" class="btn btn-primary">Explore All 12 Articles in TCM Journal &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="tcm-badge">Frequently Asked Questions</span>
+          <h2 class="section-title">Common Questions About Traditional Healing</h2>
+          <p class="section-desc">
+            Learn what to expect from acupuncture needles, safety standards, and herbal remedies.
+          </p>
+        </div>
+
+        <div class="faq-accordion-wrap">
+          <div class="faq-item active">
+            <button class="faq-question-btn" type="button">
+              <span>What does acupuncture feel like? Does it hurt?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer-panel" style="max-height: 200px;">
+              <div class="faq-answer-content">
+                Acupuncture needles are hair-thin—about 20 times thinner than hypodermic injection needles. Most patients feel only a slight tap upon insertion, followed by a deeply relaxing sensation known as <em>De Qi</em> (a gentle warmth, soothing heaviness, or pleasant tingling). Most patients drift into a peaceful nap during treatment.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Are the acupuncture needles clean and sterile?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                Yes, without exception. We strictly use pre-sterilized, single-use, surgical-grade stainless steel needles that are opened in front of you and deposited directly into sharps biohazard containers immediately after removal. Needles are never reused.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>What causes the circular marks after cupping therapy?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                The circular marks (known as <em>Sha</em>) are not bruises from trauma. Negative suction pulls stagnant cellular waste, old deoxygenated blood, and metabolic byproducts to the surface where the lymphatic system safely clears them. The marks are completely painless and naturally fade within 3 to 7 days.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Are your Chinese herbal formulas safe and pesticide-free?</span>
+              <svg class="faq-icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                We exclusively dispense Good Manufacturing Practice (GMP) certified herbal extracts. Each lot is independently tested for heavy metals, microbial safety, and pesticide residues. All formulas are 100% botanical; we never use endangered wildlife or animal products.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:2.5rem;">
+          <a href="faq.html" class="btn btn-secondary">View All FAQs &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Call to Action Banner -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-content">
+          <span class="tcm-badge" style="background:rgba(255,255,255,0.15);color:#fff;border-color:rgba(255,255,255,0.3);margin-bottom:1.2rem;">
+            Begin Your Healing Journey
+          </span>
+          <h2 class="cta-banner-title">Ready to Experience True Physiological Balance?</h2>
+          <p class="cta-banner-desc">
+            Schedule your comprehensive initial consultation today. Our licensed practitioners look forward to partnering in your optimal vitality.
+          </p>
+          <div class="cta-banner-actions">
+            <a href="booking.html" class="btn btn-terracotta btn-lg">Book an Appointment Today</a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">Contact Our Clinic</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="logo-brand" style="margin-bottom:1.1rem;">
+            <span class="tcm-seal">和</span>
+            <div class="logo-text-wrap">
+              <span class="logo-title" style="color:#ffffff;font-size:1.55rem;">Harmony Spring</span>
+              <span class="logo-subtitle" style="color:var(--c-sage-300);font-size:0.7rem;letter-spacing:0.09em;text-transform:uppercase;font-weight:600;margin-top:2px;">Acupuncture &amp; Chinese Medicine</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            A sanctuary of Traditional Chinese Medicine dedicated to natural wellness, balance, and personalized patient care through ancient wisdom and modern integrity.
+          </p>
+          <div class="footer-info-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>742 Bamboo Grove Way, Suite 200, San Francisco, CA 94108</span>
+          </div>
+          <div class="footer-info-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(555) 234-HEAL (4325)</span>
+          </div>
+          <div class="footer-social-wrap">
+            <span class="footer-social-label">Follow Us</span>
+            <div class="footer-social-links">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow Harmony Spring on Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow Harmony Spring on Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Subscribe to Harmony Spring on YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.2C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.5 15.57V8.43L15.82 12 9.5 15.57z"/></svg>
+              </a>
+              <a href="https://yelp.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Find Harmony Spring on Yelp" title="Yelp">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.66 12.01l-4.75-2.09c-.48-.21-.69-.77-.47-1.25l.89-1.92c.22-.48.78-.69 1.26-.47l4.7 2.21c.42.2.56.7.32 1.1l-1.07 1.95c-.17.31-.56.45-.88.47zm.42 1.63l.35 5.17c.04.52-.36.97-.88 1.01l-2.1.14c-.52.04-.97-.36-1.01-.88l-.4-5.18c-.04-.46.3-.85.74-.89l2.22-.15c.44-.03.88.33.91.78zm1.96-.34l4.5 2.6c.45.26.6.84.34 1.29l-1.06 1.83c-.26.45-.84.6-1.29.34l-4.47-2.65c-.39-.23-.5-.73-.25-1.12l1.24-1.85c.2-.3.6-.42.99-.44zm.64-1.95l4.89-.98c.51-.1.93.3.93.82v2.11c0 .52-.42.94-.94.94l-4.9-.1c-.46 0-.82-.36-.83-.82l-.04-2.22c0-.4.36-.75.76-.75zm-1.89-1.93l1.83-4.84c.18-.49.73-.74 1.22-.55l1.97.75c.49.19.74.74.55 1.23l-1.89 4.82c-.17.43-.66.62-1.07.43l-2.07-.88c-.37-.16-.54-.6-.54-.96z"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Connect with Harmony Spring on LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Treatments</h4>
+          <ul class="footer-links">
+            <li><a href="service-detail.html?service=acupuncture">Acupuncture Therapy</a></li>
+            <li><a href="service-detail.html?service=cupping">Cupping Therapy</a></li>
+            <li><a href="service-detail.html?service=tcm-consultation">TCM Comprehensive Intake</a></li>
+            <li><a href="service-detail.html?service=herbal-medicine">Herbal Dispensary</a></li>
+            <li><a href="service-detail.html?service=moxibustion">Moxibustion Therapy</a></li>
+            <li><a href="service-detail.html?service=wellness-consultation">Wellness Consultation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Clinic Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Classical Clinic</a></li>
+            <li><a href="home-2.html">Modern Longevity</a></li>
+            <li><a href="about.html">About the Clinic</a></li>
+            <li><a href="practitioners.html">Our Practitioners</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+            <li><a href="login.html">Patient Portal Login</a></li>
+            <li><a href="register.html">New Patient Registration</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+            <li><a href="contact.html">Contact &amp; Directions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Seasonal TCM Journal</h4>
+          <p style="font-size:0.88rem;color:var(--c-sage-300);margin-bottom:1rem;line-height:1.6;">
+            Subscribe to our monthly newsletter for seasonal food energetics, Qi Gong exercises, and natural wellness tips.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-submit">Subscribe</button>
+          </form>
+          <div style="margin-top:1.2rem;font-size:0.82rem;color:var(--c-sage-400);">
+            Clinic Hours:<br>
+            Mon – Fri: 8:30 AM – 6:00 PM<br>
+            Sat: 9:00 AM – 3:00 PM &bull; Sun: Closed
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-box">
+        <strong>Medical Disclaimer:</strong> The information provided on this website is for educational and informational purposes only and is not intended as a substitute for professional medical advice, diagnosis, or treatment. Traditional Chinese Medicine and acupuncture are designed to support and complement your overall healthcare. We make no claims of guaranteed cures. Always consult a licensed healthcare professional for serious medical conditions.
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Harmony Spring Acupuncture &amp; Chinese Medicine. All rights reserved.</div>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="privacy.html" style="color:inherit;">Privacy Policy (HIPAA)</a>
+          <a href="terms.html" style="color:inherit;">Terms &amp; Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
