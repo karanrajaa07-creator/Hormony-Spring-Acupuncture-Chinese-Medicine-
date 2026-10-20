@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment | Harmony Spring Acupuncture & Chinese Medicine</title>
+  <meta name="description" content="Schedule your acupuncture, cupping, or Chinese herbal medicine consultation with real-time slot availability.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231b5e50'><circle cx='12' cy='12' r='10'/><path d='M12 2a10 10 0 0 0 0 20 5 5 0 0 0 0-10 5 5 0 0 1 0-10z' fill='%23f9f8f5'/></svg>">
+</head>
+<body>
+  <!-- Sticky Header Wrapper (Notice Bar + Main Navigation) -->
+  <div class="sticky-header-wrapper">
+
+    <!-- Header & Navigation -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo-brand">
+            <span class="tcm-seal" title="Harmony">和</span>
+            <div class="logo-text-wrap">
+              <span class="logo-title">Harmony Spring</span>
+              <span class="logo-subtitle">Acupuncture &amp; Chinese Medicine</span>
+            </div>
+          </a>
+
+          <ul class="nav-links">
+            <li class="nav-item-dropdown">
+              <a href="index.html" class="nav-link " id="homeDropdownToggle" role="button" aria-haspopup="true" aria-expanded="false">
+                <span>Home</span>
+                <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </a>
+              <div class="nav-dropdown-menu" aria-labelledby="homeDropdownToggle">
+                <a href="index.html" class="dropdown-item ">
+                  <div class="dropdown-item-header">
+                    <span class="dropdown-item-title">Traditional Clinic</span>
+                    <span class="dropdown-item-badge">Traditional</span>
+                  </div>
+                  <span class="dropdown-item-desc">Traditional Acupuncture &amp; Herbal Dispensary</span>
+                </a>
+                <a href="home-2.html" class="dropdown-item ">
+                  <div class="dropdown-item-header">
+                    <span class="dropdown-item-title">Modern Longevity</span>
+                    <span class="dropdown-item-badge badge-modern">Modern</span>
+                  </div>
+                  <span class="dropdown-item-desc">Five Elements Longevity &amp; Vitality Programs</span>
+                </a>
+              </div>
+            </li>
+            <li><a href="about.html" class="nav-link ">About Us</a></li>
+            <li><a href="services.html" class="nav-link ">Services</a></li>
+            <li><a href="practitioners.html" class="nav-link ">Practitioners</a></li>
+            <li><a href="blog.html" class="nav-link ">Blog</a></li>
+            <li><a href="faq.html" class="nav-link ">FAQ</a></li>
+            <li><a href="contact.html" class="nav-link ">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <div class="nav-controls">
+              <button class="nav-pill-btn dir-toggle-btn" id="dirToggleBtn" type="button" title="Switch text direction (LTR / RTL)" aria-label="Toggle text direction">
+                <span class="dir-opt active" data-dir="ltr">LTR</span>
+                <span class="dir-divider">/</span>
+                <span class="dir-opt" data-dir="rtl">RTL</span>
+              </button>
+              <button class="nav-icon-btn theme-toggle-btn" id="themeToggleBtn" type="button" title="Switch to Dark Mode" aria-label="Toggle dark mode">
+                <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+              </button>
+            </div>
+            <a href="dashboard.html" class="nav-portal-btn" id="navPortalBtn" title="Sarah's Portal">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span class="nav-portal-text">Sarah's Portal</span>
+            </a>
+            <a href="booking.html" class="btn btn-primary btn-sm btn-book-nav">Book Appointment</a>
+            <button type="button" class="nav-auth-icon-btn" id="navAuthIconBtn" title="Account Action" aria-label="Account Action">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
+            </button>
+            <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">&#9776;</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <div class="logo-brand">
+        <span class="tcm-seal">和</span>
+        <div class="logo-text-wrap">
+          <span class="logo-title" style="font-size:1.3rem;">Harmony Spring</span>
+          <span class="logo-subtitle" style="font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--c-sage-600);font-weight:600;">Acupuncture &amp; Chinese Medicine</span>
+        </div>
+      </div>
+      <button class="mobile-nav-close" aria-label="Close Navigation Menu">&times;</button>
+    </div>
+    <div class="mobile-nav-controls" style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0;margin-bottom:1.25rem;border-bottom:1px solid var(--c-border);">
+      <span style="font-size:0.85rem;font-weight:600;color:var(--c-ink-muted);">Display &amp; Language:</span>
+      <div class="nav-controls">
+        <button class="nav-pill-btn dir-toggle-btn" type="button" title="Switch text direction" aria-label="Toggle text direction">
+          <span class="dir-opt active" data-dir="ltr">LTR</span>
+          <span class="dir-divider">/</span>
+          <span class="dir-opt" data-dir="rtl">RTL</span>
+        </button>
+        <button class="nav-icon-btn theme-toggle-btn" type="button" title="Switch to Dark Mode" aria-label="Toggle dark mode">
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+        
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-has-sub open">
+        <div class="mobile-nav-link-row">
+          <a href="index.html" class="">Home</a>
+          <button type="button" class="mobile-sub-toggle" aria-label="Toggle Home Submenu">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <ul class="mobile-sub-menu">
+          <li><a href="index.html" class="mobile-sub-item ">&bull; Traditional Clinic</a></li>
+          <li><a href="home-2.html" class="mobile-sub-item ">&bull; Modern Longevity</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" class="">About Us</a></li>
+      <li><a href="services.html" class="">Services &amp; Treatments</a></li>
+      <li><a href="practitioners.html" class="">Practitioners (9 Specialists)</a></li>
+      <li><a href="blog.html" class="">Blog &amp; Journal</a></li>
+      <li><a href="faq.html" class="">FAQ</a></li>
+      <li><a href="contact.html" class="">Contact Us</a></li>
+    </ul>
+    <div id="mobileNavAuthSlot" style="margin-top:auto;">
+      <a href="login.html" class="btn btn-secondary btn-block" style="margin-bottom:0.8rem;">Patient Login</a>
+      <a href="booking.html" class="btn btn-primary btn-block">Book Appointment</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="section" style="padding:3.5rem 0 2rem;background:radial-gradient(circle at 50% 10%, rgba(203, 217, 206, 0.4) 0%, rgba(249, 248, 245, 0.95) 100%);">
+      <div class="container container-narrow" style="text-align:center;">
+        <span class="tcm-badge" style="margin-bottom:1rem;">Real-Time Appointment Scheduling</span>
+        <h1 style="margin-bottom:1rem;">Reserve Your Healing Session</h1>
+        <p style="font-size:1.1rem;color:var(--c-ink-body);line-height:1.7;">
+          Choose your service and practitioner, select an available date, and lock in your verified time slot. Real-time availability directly from our clinic scheduling system.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:2.5rem;padding-bottom:5rem;">
+      <div class="container" style="max-width:880px;">
+        <!-- Conflict warning box -->
+        <div id="slotConflictAlert" style="display:none;background:#fdf2f2;border:1px solid #c93b2b;color:#7d1a12;border-radius:var(--radius-sm);padding:1rem 1.4rem;margin-bottom:1.5rem;font-size:0.92rem;"></div>
+
+        <!-- Success screen container (hidden initially) -->
+        <div id="bookingSuccessContainer" style="display:none;"></div>
+
+        <!-- Main Booking Form Card -->
+        <div class="dash-card" id="bookingFormCard" style="padding:2.5rem 3rem;">
+          <!-- Demo Evaluation & Quick Fill Assistant -->
+          <div style="background:var(--c-cream-muted);border:1px dashed var(--c-border);border-radius:var(--radius-md);padding:1rem 1.25rem;margin-bottom:2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:var(--radius-full);background:var(--c-sage-100);color:var(--c-jade-600);font-size:0.9rem;flex-shrink:0;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </span>
+              <div>
+                <strong style="font-size:0.86rem;color:var(--c-ink-dark);display:block;">Demo Testing Assistant</strong>
+                <span style="font-size:0.78rem;color:var(--c-ink-muted);">Click to auto-populate all appointment fields with verified patient data.</span>
+              </div>
+            </div>
+            <button type="button" id="quickFillBookingBtn" class="btn btn-secondary btn-sm" style="display:inline-flex;align-items:center;gap:0.4rem;font-size:0.82rem;padding:0.45rem 1rem;border-radius:var(--radius-full);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+              Quick Fill Demo Data
+            </button>
+          </div>
+
+          <form id="appointmentBookingForm">
+            <!-- Step 1: Select Service -->
+            <div class="form-group">
+              <label class="form-label" for="bookServiceSelect">
+                <strong>1. Select Treatment Service *</strong>
+              </label>
+              <select id="bookServiceSelect" class="form-select" required>
+                <option value="">Loading services from clinic...</option>
+              </select>
+            </div>
+
+            <!-- Step 2: Select Practitioner -->
+            <div class="form-group">
+              <label class="form-label" for="bookPractitionerSelect">
+                <strong>2. Select Preferred Practitioner *</strong>
+              </label>
+              <select id="bookPractitionerSelect" class="form-select" required>
+                <option value="">Loading practitioners...</option>
+              </select>
+            </div>
+
+            <!-- Step 3: Date & Live Time Slots -->
+            <div style="display:grid;grid-template-columns:1fr 1.3fr;gap:2rem;margin-bottom:1.5rem;" class="concept-grid">
+              <div class="form-group">
+                <label class="form-label" for="bookDateInput">
+                  <strong>3. Select Date *</strong>
+                </label>
+                <input type="date" id="bookDateInput" class="form-control" required>
+                <span style="font-size:0.8rem;color:var(--c-ink-muted);margin-top:0.3rem;display:block;">
+                  Clinic open Monday through Saturday
+                </span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">
+                  <strong>4. Choose Available Time Slot *</strong>
+                </label>
+                <input type="hidden" id="bookTimeSelected" required>
+                <div id="timeSlotsContainer" style="min-height:50px;">
+                  <span style="color:var(--c-ink-muted);font-size:0.9rem;">
+                    Select a practitioner and date to check slot availability.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4: Patient Information -->
+            <div style="background:var(--c-sage-50);border:1px solid var(--c-sage-200);border-radius:var(--radius-md);padding:1.8rem;margin-bottom:2rem;">
+              <h3 style="font-size:1.25rem;margin-bottom:1.2rem;color:var(--c-sage-900);">5. Patient Contact Information</h3>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;" class="concept-grid">
+                <div class="form-group" style="margin-bottom:0.8rem;">
+                  <label class="form-label" for="bookPatientName">Full Name *</label>
+                  <input type="text" id="bookPatientName" class="form-control" placeholder="e.g. Sarah Chen" required>
+                </div>
+                <div class="form-group" style="margin-bottom:0.8rem;">
+                  <label class="form-label" for="bookPatientEmail">Email Address *</label>
+                  <input type="email" id="bookPatientEmail" class="form-control" placeholder="e.g. sarah@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom:0.8rem;">
+                <label class="form-label" for="bookPatientPhone">Phone Number *</label>
+                <input type="tel" id="bookPatientPhone" class="form-control" placeholder="e.g. (555) 234-5678" pattern="[0-9+\-()\s]*" inputmode="tel" title="Please enter numbers and phone symbols only" required>
+              </div>
+
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="bookNotes">Primary Symptoms or Health Goals (Optional)</label>
+                <textarea id="bookNotes" class="form-control" rows="2" placeholder="e.g. Lower back stiffness, tension migraines, digestive discomfort..."></textarea>
+              </div>
+            </div>
+
+            <!-- Consent & Policies -->
+            <div class="form-check" style="margin-bottom:1.5rem;">
+              <input type="checkbox" id="bookConsent" required checked>
+              <label for="bookConsent" style="color:var(--c-ink-body);font-size:0.85rem;line-height:1.5;">
+                I understand the clinic's <strong>24-hour cancellation policy</strong> and consent to confidential health records management in accordance with HIPAA standards.
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="bookSubmitBtn" class="btn btn-primary btn-block btn-lg">
+              Confirm Appointment Booking
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="logo-brand" style="margin-bottom:1.1rem;">
+            <span class="tcm-seal">和</span>
+            <div class="logo-text-wrap">
+              <span class="logo-title" style="color:#ffffff;font-size:1.55rem;">Harmony Spring</span>
+              <span class="logo-subtitle" style="color:var(--c-sage-300);font-size:0.7rem;letter-spacing:0.09em;text-transform:uppercase;font-weight:600;margin-top:2px;">Acupuncture &amp; Chinese Medicine</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            A sanctuary of Traditional Chinese Medicine dedicated to natural wellness, balance, and personalized patient care through ancient wisdom and modern integrity.
+          </p>
+          <div class="footer-info-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>742 Bamboo Grove Way, Suite 200, San Francisco, CA 94108</span>
+          </div>
+          <div class="footer-info-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(555) 234-HEAL (4325)</span>
+          </div>
+          <div class="footer-social-wrap">
+            <span class="footer-social-label">Follow Us</span>
+            <div class="footer-social-links">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow Harmony Spring on Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow Harmony Spring on Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Subscribe to Harmony Spring on YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.2C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.5 15.57V8.43L15.82 12 9.5 15.57z"/></svg>
+              </a>
+              <a href="https://yelp.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Find Harmony Spring on Yelp" title="Yelp">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.66 12.01l-4.75-2.09c-.48-.21-.69-.77-.47-1.25l.89-1.92c.22-.48.78-.69 1.26-.47l4.7 2.21c.42.2.56.7.32 1.1l-1.07 1.95c-.17.31-.56.45-.88.47zm.42 1.63l.35 5.17c.04.52-.36.97-.88 1.01l-2.1.14c-.52.04-.97-.36-1.01-.88l-.4-5.18c-.04-.46.3-.85.74-.89l2.22-.15c.44-.03.88.33.91.78zm1.96-.34l4.5 2.6c.45.26.6.84.34 1.29l-1.06 1.83c-.26.45-.84.6-1.29.34l-4.47-2.65c-.39-.23-.5-.73-.25-1.12l1.24-1.85c.2-.3.6-.42.99-.44zm.64-1.95l4.89-.98c.51-.1.93.3.93.82v2.11c0 .52-.42.94-.94.94l-4.9-.1c-.46 0-.82-.36-.83-.82l-.04-2.22c0-.4.36-.75.76-.75zm-1.89-1.93l1.83-4.84c.18-.49.73-.74 1.22-.55l1.97.75c.49.19.74.74.55 1.23l-1.89 4.82c-.17.43-.66.62-1.07.43l-2.07-.88c-.37-.16-.54-.6-.54-.96z"/></svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Connect with Harmony Spring on LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Treatments</h4>
+          <ul class="footer-links">
+            <li><a href="service-detail.html?service=acupuncture">Acupuncture Therapy</a></li>
+            <li><a href="service-detail.html?service=cupping">Cupping Therapy</a></li>
+            <li><a href="service-detail.html?service=tcm-consultation">TCM Comprehensive Intake</a></li>
+            <li><a href="service-detail.html?service=herbal-medicine">Herbal Dispensary</a></li>
+            <li><a href="service-detail.html?service=moxibustion">Moxibustion Therapy</a></li>
+            <li><a href="service-detail.html?service=wellness-consultation">Wellness Consultation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Clinic Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Traditional Clinic</a></li>
+            <li><a href="home-2.html">Modern Longevity</a></li>
+            <li><a href="about.html">About the Clinic</a></li>
+            <li><a href="practitioners.html">Our Practitioners</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+            <li><a href="login.html">Patient Portal Login</a></li>
+            <li><a href="register.html">New Patient Registration</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+            <li><a href="contact.html">Contact &amp; Directions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Seasonal TCM Journal</h4>
+          <p style="font-size:0.88rem;color:var(--c-sage-300);margin-bottom:1rem;line-height:1.6;">
+            Subscribe to our monthly newsletter for seasonal food energetics, Qi Gong exercises, and natural wellness tips.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-submit">Subscribe</button>
+          </form>
+          <div style="margin-top:1.2rem;font-size:0.82rem;color:var(--c-sage-400);">
+            Clinic Hours:<br>
+            Mon – Fri: 8:30 AM – 6:00 PM<br>
+            Sat: 9:00 AM – 3:00 PM &bull; Sun: Closed
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-box">
+        <strong>Medical Disclaimer:</strong> The information provided on this website is for educational and informational purposes only and is not intended as a substitute for professional medical advice, diagnosis, or treatment. Traditional Chinese Medicine and acupuncture are designed to support and complement your overall healthcare. We make no claims of guaranteed cures. Always consult a licensed healthcare professional for serious medical conditions.
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Harmony Spring Acupuncture &amp; Chinese Medicine. All rights reserved.</div>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="privacy.html" style="color:inherit;">Privacy Policy (HIPAA)</a>
+          <a href="terms.html" style="color:inherit;">Terms &amp; Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/booking.js"></script>
+</body>
+</html>
