@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TCM Wellness Journal | Harmony Spring Acupuncture &amp; Chinese Medicine</title>
+  <meta name="description" content="Explore clinical insights, classical Chinese herbal formulas, acupuncture science, and seasonal living guides written by licensed practitioners.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231b5e50'><circle cx='12' cy='12' r='10'/><path d='M12 2a10 10 0 0 0 0 20 5 5 0 0 0 0-10 5 5 0 0 1 0-10z' fill='%23f9f8f5'/></svg>">
+</head>
+<body>
+  <!-- Sticky Header Wrapper (Notice Bar + Main Navigation) -->
+  <div class="sticky-header-wrapper">
+
+    <!-- Header & Navigation -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo-brand">
+            <span class="tcm-seal" title="Harmony">和</span>
+            <div class="logo-text-wrap">
+              <span class="logo-title">Harmony Spring</span>
+              <span class="logo-subtitle">Acupuncture &amp; Chinese Medicine</span>
+            </div>
+          </a>
+
+          <ul class="nav-links">
+            <li class="nav-item-dropdown">
+              <a href="index.html" class="nav-link " id="homeDropdownToggle" role="button" aria-haspopup="true" aria-expanded="false">
+                <span>Home</span>
+                <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </a>
+              <div class="nav-dropdown-menu" aria-labelledby="homeDropdownToggle">
+                <a href="index.html" class="dropdown-item ">
+                  <div class="dropdown-item-header">
+                    <span class="dropdown-item-title">Traditional Clinic</span>
+                    <span class="dropdown-item-badge">Traditional</span>
+                  </div>
+                  <span class="dropdown-item-desc">Traditional Acupuncture &amp; Herbal Dispensary</span>
+                </a>
+                <a href="home-2.html" class="dropdown-item ">
+                  <div class="dropdown-item-header">
+                    <span class="dropdown-item-title">Modern Longevity</span>
+                    <span class="dropdown-item-badge badge-modern">Modern</span>
+                  </div>
+                  <span class="dropdown-item-desc">Five Elements Longevity &amp; Vitality Programs</span>
+                </a>
+              </div>
+            </li>
+            <li><a href="about.html" class="nav-link ">About Us</a></li>
+            <li><a href="services.html" class="nav-link ">Services</a></li>
+            <li><a href="practitioners.html" class="nav-link ">Practitioners</a></li>
+            <li><a href="blog.html" class="nav-link active">Blog</a></li>
+            <li><a href="faq.html" class="nav-link ">FAQ</a></li>
+            <li><a href="contact.html" class="nav-link ">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <div class="nav-controls">
+              <button class="nav-pill-btn dir-toggle-btn" id="dirToggleBtn" type="button" title="Switch text direction (LTR / RTL)" aria-label="Toggle text direction">
+                <span class="dir-opt active" data-dir="ltr">LTR</span>
+                <span class="dir-divider">/</span>
+                <span class="dir-opt" data-dir="rtl">RTL</span>
+              </button>
+              <button class="nav-icon-btn theme-toggle-btn" id="themeToggleBtn" type="button" title="Switch to Dark Mode" aria-label="Toggle dark mode">
+                <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+              </button>
+            </div>
+            <a href="dashboard.html" class="nav-portal-btn" id="navPortalBtn" title="Sarah's Portal">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span class="nav-portal-text">Sarah's Portal</span>
+            </a>
+            <a href="booking.html" class="btn btn-primary btn-sm btn-book-nav">Book Appointment</a>
+            <button type="button" class="nav-auth-icon-btn" id="navAuthIconBtn" title="Account Action" aria-label="Account Action">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
+            </button>
+            <button class="mobile-nav-toggle" aria-label="Open Navigation Menu">&#9776;</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <div class="logo-brand">
+        <span class="tcm-seal">和</span>
+        <div class="logo-text-wrap">
+          <span class="logo-title" style="font-size:1.3rem;">Harmony Spring</span>
+          <span class="logo-subtitle" style="font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--c-sage-600);font-weight:600;">Acupuncture &amp; Chinese Medicine</span>
+        </div>
+      </div>
+      <button class="mobile-nav-close" aria-label="Close Navigation Menu">&times;</button>
+    </div>
+    <div class="mobile-nav-controls" style="display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0;margin-bottom:1.25rem;border-bottom:1px solid var(--c-border);">
+      <span style="font-size:0.85rem;font-weight:600;color:var(--c-ink-muted);">Display &amp; Language:</span>
+      <div class="nav-controls">
+        <button class="nav-pill-btn dir-toggle-btn" type="button" title="Switch text direction" aria-label="Toggle text direction">
+          <span class="dir-opt active" data-dir="ltr">LTR</span>
+          <span class="dir-divider">/</span>
+          <span class="dir-opt" data-dir="rtl">RTL</span>
+        </button>
+        <button class="nav-icon-btn theme-toggle-btn" type="button" title="Switch to Dark Mode" aria-label="Toggle dark mode">
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </div>
+        
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-has-sub open">
+        <div class="mobile-nav-link-row">
+          <a href="index.html" class="">Home</a>
+          <button type="button" class="mobile-sub-toggle" aria-label="Toggle Home Submenu">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <ul class="mobile-sub-menu">
+          <li><a href="index.html" class="mobile-sub-item ">&bull; Traditional Clinic</a></li>
+          <li><a href="home-2.html" class="mobile-sub-item ">&bull; Modern Longevity</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" class="">About Us</a></li>
+      <li><a href="services.html" class="">Services &amp; Treatments</a></li>
+      <li><a href="practitioners.html" class="">Practitioners (9 Specialists)</a></li>
+      <li><a href="blog.html" class="active">Blog &amp; Journal</a></li>
+      <li><a href="faq.html" class="">FAQ</a></li>
+      <li><a href="contact.html" class="">Contact Us</a></li>
+    </ul>
+    <div id="mobileNavAuthSlot" style="margin-top:auto;">
+      <a href="login.html" class="btn btn-secondary btn-block" style="margin-bottom:0.8rem;">Patient Login</a>
+      <a href="booking.html" class="btn btn-primary btn-block">Book Appointment</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="section" style="padding:4rem 0 3rem;background:radial-gradient(circle at 50% 10%, rgba(203, 217, 206, 0.4) 0%, rgba(249, 248, 245, 0.95) 100%);">
+      <div class="container container-narrow" style="text-align:center;">
+        <span class="tcm-badge" style="margin-bottom:1rem;">Holistic Health Publications</span>
+        <h1 style="margin-bottom:1.2rem;">The Seasonal TCM Journal</h1>
+        <p style="font-size:1.15rem;color:var(--c-ink-body);line-height:1.7;">
+          Educational articles, seasonal dietetics, and ancient medical wisdom written by our licensed practitioners.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:2.5rem;">
+      <div class="container">
+        <!-- Search and Filter Bar -->
+        <div style="max-width: 600px; margin: 0 auto 2rem; position: relative;">
+          <div style="position: relative; display: flex; align-items: center;">
+            <span style="position: absolute; left: 1.1rem; color: var(--c-sage-600); pointer-events: none; display: flex; align-items: center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </span>
+            <input type="search" id="blogSearchInput" placeholder="Search by topic, symptom, herb, or keyword (e.g. sleep, cupping, qi)..." style="width: 100%; padding: 0.85rem 2.8rem 0.85rem 3rem; border-radius: var(--radius-full); border: 1.5px solid var(--c-border); background: #ffffff; color: var(--c-ink-dark); font-size: 0.95rem; box-shadow: var(--shadow-sm); transition: border-color var(--t-smooth), box-shadow var(--t-smooth);" aria-label="Search blog articles">
+            <button type="button" id="blogSearchClear" style="position: absolute; right: 0.9rem; background: none; border: none; color: var(--c-ink-muted); cursor: pointer; padding: 0.4rem; display: none; font-size: 1.2rem; line-height: 1;" title="Clear search" aria-label="Clear search">&times;</button>
+          </div>
+        </div>
+
+        <!-- Filter Tabs with balanced bottom margin -->
+        <div class="services-filter-bar" style="margin-bottom: 1.8rem;">
+          <button type="button" class="filter-btn active" data-category="all">All Articles (12)</button>
+          <button type="button" class="filter-btn" data-category="Seasonal Living">Seasonal Living (3)</button>
+          <button type="button" class="filter-btn" data-category="Herbal Medicine">Herbal Medicine (3)</button>
+          <button type="button" class="filter-btn" data-category="Bodywork &amp; Cupping">Bodywork &amp; Cupping (3)</button>
+          <button type="button" class="filter-btn" data-category="TCM Fundamentals">TCM Fundamentals (3)</button>
+        </div>
+
+        <!-- Active Filter Status Indicator -->
+        <div id="blogResultStatus" style="font-size: 0.9rem; color: var(--c-sage-800); margin-bottom: 1.8rem; text-align: center; display: none; font-weight: 500;"></div>
+
+        <!-- Responsive 3-Column Blog Article Grid (Pre-rendered for instantaneous loading) -->
+        <div class="blog-grid" id="blogPostsGrid">
+
+            <article class="blog-card" data-id="understanding-qi-meridians" data-category="TCM Fundamentals" data-tags="Acupuncture Qi Energy Meridian Theory Holistic Health" data-title="understanding qi and meridian pathways: the highway of natural vitality" data-author="dr. meilin chen, dacm">
+              <div class="blog-card-media">
+                <a href="blog-detail.html?id=understanding-qi-meridians" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%;">
+                  <img src="assets/images/meridian_pathways.jpg" 
+                       alt="Understanding Qi and Meridian Pathways: The Highway of Natural Vitality" 
+                       class="blog-main-img" 
+                       loading="lazy" 
+                       onerror="this.onerror=null; this.src='assets/images/treatment_room.jpg';">
+                </a>
+                <span class="blog-category-tag">
+                  TCM Fundamentals
+                </span>
+                <span class="blog-read-time-tag">
+                  6 min read
+                </span>
+              </div>
+              <div class="blog-card-body" style="padding:1.6rem;display:flex;flex-direction:column;flex-grow:1;">
+                <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--c-ink-muted);margin-bottom:0.7rem;">
+                  <a href="practitioner-detail.html?id=doc_chen" style="font-weight:600;color:var(--c-sage-700);text-decoration:none;">Dr. Meilin Chen, DACM</a>
+                  <span>&bull;</span>
+                  <span>October 6, 2026</span>
+                </div>
+                <h3 class="blog-card-title" style="font-size:1.25rem;line-height:1.35;margin-bottom:0.75rem;">
+                  <a href="blog-detail.html?id=understanding-qi-meridians" style="color:inherit;text-decoration:none;">Understanding Qi and Meridian Pathways: The Highway of Natural Vitality</a>
+                </h3>
+                <p class="blog-card-desc" style="font-size:0.92rem;line-height:1.6;color:var(--c-ink-body);margin-bottom:1.2rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                  Discover how the ancient concept of Qi — your body's vital life energy — travels through twelve primary meridian channels to sustain balance, cellular vitality, and emotional peace.
+                </p>
+                
+                <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:auto;">
+                  <a href="blog.html?tag=Acupuncture" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Acupuncture</a><a href="blog.html?tag=Qi%20Energy" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Qi Energy</a><a href="blog.html?tag=Meridian%20Theory" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Meridian Theory</a><a href="blog.html?tag=Holistic%20Health" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Holistic Health</a>
+                </div>
+
+                <div style="padding-top:1.1rem;border-top:1px solid var(--c-border-light);margin-top:auto;">
+                  <a href="blog-detail.html?id=understanding-qi-meridians" class="btn btn-secondary btn-block" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:0.4rem;font-weight:600;">
+                    Read Article <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card" data-id="classical-chinese-herbal-formulas" data-category="Herbal Medicine" data-tags="Chinese Herbs Holistic Formulas Digestion Immunity" data-title="a beginner's guide to classical chinese herbal formulas: balance in every cup" data-author="dr. jonathan wu, dipl. o.m.">
+              <div class="blog-card-media">
+                <a href="blog-detail.html?id=classical-chinese-herbal-formulas" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%;">
+                  <img src="assets/images/chinese_herbal_medicine.jpg" 
+                       alt="A Beginner's Guide to Classical Chinese Herbal Formulas: Balance in Every Cup" 
+                       class="blog-main-img" 
+                       loading="lazy" 
+                       onerror="this.onerror=null; this.src='assets/images/treatment_room.jpg';">
+                </a>
+                <span class="blog-category-tag">
+                  Herbal Medicine
+                </span>
+                <span class="blog-read-time-tag">
+                  8 min read
+                </span>
+              </div>
+              <div class="blog-card-body" style="padding:1.6rem;display:flex;flex-direction:column;flex-grow:1;">
+                <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--c-ink-muted);margin-bottom:0.7rem;">
+                  <a href="practitioner-detail.html?id=doc_wu" style="font-weight:600;color:var(--c-sage-700);text-decoration:none;">Dr. Jonathan Wu, Dipl. O.M.</a>
+                  <span>&bull;</span>
+                  <span>September 28, 2026</span>
+                </div>
+                <h3 class="blog-card-title" style="font-size:1.25rem;line-height:1.35;margin-bottom:0.75rem;">
+                  <a href="blog-detail.html?id=classical-chinese-herbal-formulas" style="color:inherit;text-decoration:none;">A Beginner's Guide to Classical Chinese Herbal Formulas: Balance in Every Cup</a>
+                </h3>
+                <p class="blog-card-desc" style="font-size:0.92rem;line-height:1.6;color:var(--c-ink-body);margin-bottom:1.2rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                  Unlike Western single-herb supplements, Chinese herbal formulas are masterfully balanced symphonies where each botanical ingredient plays a specific harmonious role.
+                </p>
+                
+                <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:auto;">
+                  <a href="blog.html?tag=Chinese%20Herbs" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Chinese Herbs</a><a href="blog.html?tag=Holistic%20Formulas" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Holistic Formulas</a><a href="blog.html?tag=Digestion" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Digestion</a><a href="blog.html?tag=Immunity" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Immunity</a>
+                </div>
+
+                <div style="padding-top:1.1rem;border-top:1px solid var(--c-border-light);margin-top:auto;">
+                  <a href="blog-detail.html?id=classical-chinese-herbal-formulas" class="btn btn-secondary btn-block" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:0.4rem;font-weight:600;">
+                    Read Article <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card" data-id="fire-cupping-explained" data-category="Bodywork & Cupping" data-tags="Cupping Pain Relief Fascia Recovery" data-title="decompressing the body: how fire cupping therapy releases deep fascial tension" data-author="dr. meilin chen, dacm">
+              <div class="blog-card-media">
+                <a href="blog-detail.html?id=fire-cupping-explained" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%;">
+                  <img src="assets/images/cupping_therapy.jpg" 
+                       alt="Decompressing the Body: How Fire Cupping Therapy Releases Deep Fascial Tension" 
+                       class="blog-main-img" 
+                       loading="lazy" 
+                       onerror="this.onerror=null; this.src='assets/images/treatment_room.jpg';">
+                </a>
+                <span class="blog-category-tag">
+                  Bodywork & Cupping
+                </span>
+                <span class="blog-read-time-tag">
+                  5 min read
+                </span>
+              </div>
+              <div class="blog-card-body" style="padding:1.6rem;display:flex;flex-direction:column;flex-grow:1;">
+                <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--c-ink-muted);margin-bottom:0.7rem;">
+                  <a href="practitioner-detail.html?id=doc_chen" style="font-weight:600;color:var(--c-sage-700);text-decoration:none;">Dr. Meilin Chen, DACM</a>
+                  <span>&bull;</span>
+                  <span>September 15, 2026</span>
+                </div>
+                <h3 class="blog-card-title" style="font-size:1.25rem;line-height:1.35;margin-bottom:0.75rem;">
+                  <a href="blog-detail.html?id=fire-cupping-explained" style="color:inherit;text-decoration:none;">Decompressing the Body: How Fire Cupping Therapy Releases Deep Fascial Tension</a>
+                </h3>
+                <p class="blog-card-desc" style="font-size:0.92rem;line-height:1.6;color:var(--c-ink-body);margin-bottom:1.2rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                  From Olympic athletes to office workers, cupping therapy provides profound muscular relief by using negative suction pressure to lift and unstick tight fascia.
+                </p>
+                
+                <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:auto;">
+                  <a href="blog.html?tag=Cupping" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Cupping</a><a href="blog.html?tag=Pain%20Relief" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Pain Relief</a><a href="blog.html?tag=Fascia" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Fascia</a><a href="blog.html?tag=Recovery" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Recovery</a>
+                </div>
+
+                <div style="padding-top:1.1rem;border-top:1px solid var(--c-border-light);margin-top:auto;">
+                  <a href="blog-detail.html?id=fire-cupping-explained" class="btn btn-secondary btn-block" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:0.4rem;font-weight:600;">
+                    Read Article <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card" data-id="five-elements-seasonal-living" data-category="Seasonal Living" data-tags="Five Elements Seasonal Living Yang Sheng Nutrition" data-title="living with the seasons: autumn and winter wellness through the five elements" data-author="dr. evelyn zhao, dacm">
+              <div class="blog-card-media">
+                <a href="blog-detail.html?id=five-elements-seasonal-living" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%;">
+                  <img src="assets/images/wellness_lifestyle.jpg" 
+                       alt="Living with the Seasons: Autumn and Winter Wellness Through the Five Elements" 
+                       class="blog-main-img" 
+                       loading="lazy" 
+                       onerror="this.onerror=null; this.src='assets/images/treatment_room.jpg';">
+                </a>
+                <span class="blog-category-tag">
+                  Seasonal Living
+                </span>
+                <span class="blog-read-time-tag">
+                  7 min read
+                </span>
+              </div>
+              <div class="blog-card-body" style="padding:1.6rem;display:flex;flex-direction:column;flex-grow:1;">
+                <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--c-ink-muted);margin-bottom:0.7rem;">
+                  <a href="practitioner-detail.html?id=doc_zhao" style="font-weight:600;color:var(--c-sage-700);text-decoration:none;">Dr. Evelyn Zhao, DACM</a>
+                  <span>&bull;</span>
+                  <span>August 30, 2026</span>
+                </div>
+                <h3 class="blog-card-title" style="font-size:1.25rem;line-height:1.35;margin-bottom:0.75rem;">
+                  <a href="blog-detail.html?id=five-elements-seasonal-living" style="color:inherit;text-decoration:none;">Living with the Seasons: Autumn and Winter Wellness Through the Five Elements</a>
+                </h3>
+                <p class="blog-card-desc" style="font-size:0.92rem;line-height:1.6;color:var(--c-ink-body);margin-bottom:1.2rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                  Align your daily nutrition, sleep, and emotional rhythm with nature's cycles according to the ancient Five Elements: Wood, Fire, Earth, Metal, and Water.
+                </p>
+                
+                <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:auto;">
+                  <a href="blog.html?tag=Five%20Elements" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Five Elements</a><a href="blog.html?tag=Seasonal%20Living" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Seasonal Living</a><a href="blog.html?tag=Yang%20Sheng" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Yang Sheng</a><a href="blog.html?tag=Nutrition" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Nutrition</a>
+                </div>
+
+                <div style="padding-top:1.1rem;border-top:1px solid var(--c-border-light);margin-top:auto;">
+                  <a href="blog-detail.html?id=five-elements-seasonal-living" class="btn btn-secondary btn-block" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:0.4rem;font-weight:600;">
+                    Read Article <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card" data-id="spring-wood-element-liver-detox" data-category="Seasonal Living" data-tags="Spring Wellness Liver Qi Detox Five Elements" data-title="harmonizing with spring: liver qi rejuvenation and green dietetics" data-author="dr. evelyn zhao, dacm">
+              <div class="blog-card-media">
+                <a href="blog-detail.html?id=spring-wood-element-liver-detox" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%;">
+                  <img src="assets/images/spring_wellness.jpg" 
+                       alt="Harmonizing with Spring: Liver Qi Rejuvenation and Green Dietetics" 
+                       class="blog-main-img" 
+                       loading="lazy" 
+                       onerror="this.onerror=null; this.src='assets/images/treatment_room.jpg';">
+                </a>
+                <span class="blog-category-tag">
+                  Seasonal Living
+                </span>
+                <span class="blog-read-time-tag">
+                  6 min read
+                </span>
+              </div>
+              <div class="blog-card-body" style="padding:1.6rem;display:flex;flex-direction:column;flex-grow:1;">
+                <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--c-ink-muted);margin-bottom:0.7rem;">
+                  <a href="practitioner-detail.html?id=doc_zhao" style="font-weight:600;color:var(--c-sage-700);text-decoration:none;">Dr. Evelyn Zhao, DACM</a>
+                  <span>&bull;</span>
+                  <span>October 10, 2026</span>
+                </div>
+                <h3 class="blog-card-title" style="font-size:1.25rem;line-height:1.35;margin-bottom:0.75rem;">
+                  <a href="blog-detail.html?id=spring-wood-element-liver-detox" style="color:inherit;text-decoration:none;">Harmonizing with Spring: Liver Qi Rejuvenation and Green Dietetics</a>
+                </h3>
+                <p class="blog-card-desc" style="font-size:0.92rem;line-height:1.6;color:var(--c-ink-body);margin-bottom:1.2rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                  As nature awakens in spring, learn how the Wood element and Liver meridian govern renewal, emotional release, and vibrant seasonal energy.
+                </p>
+                
+                <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:auto;">
+                  <a href="blog.html?tag=Spring%20Wellness" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Spring Wellness</a><a href="blog.html?tag=Liver%20Qi" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Liver Qi</a><a href="blog.html?tag=Detox" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Detox</a><a href="blog.html?tag=Five%20Elements" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Five Elements</a>
+                </div>
+
+                <div style="padding-top:1.1rem;border-top:1px solid var(--c-border-light);margin-top:auto;">
+                  <a href="blog-detail.html?id=spring-wood-element-liver-detox" class="btn btn-secondary btn-block" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:0.4rem;font-weight:600;">
+                    Read Article <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card" data-id="winter-kidney-yang-warming-herbs" data-category="Seasonal Living" data-tags="Winter Health Kidney Yang Warming Soups Herbal Tonics" data-title="nourishing kidney yang: warming teas, soups, and restorative winter rituals" data-author="dr. jonathan wu, dipl. o.m.">
+              <div class="blog-card-media">
+                <a href="blog-detail.html?id=winter-kidney-yang-warming-herbs" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%;">
+                  <img src="assets/images/winter_herbs.jpg" 
+                       alt="Nourishing Kidney Yang: Warming Teas, Soups, and Restorative Winter Rituals" 
+                       class="blog-main-img" 
+                       loading="lazy" 
+                       onerror="this.onerror=null; this.src='assets/images/treatment_room.jpg';">
+                </a>
+                <span class="blog-category-tag">
+                  Seasonal Living
+                </span>
+                <span class="blog-read-time-tag">
+                  5 min read
+                </span>
+              </div>
+              <div class="blog-card-body" style="padding:1.6rem;display:flex;flex-direction:column;flex-grow:1;">
+                <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--c-ink-muted);margin-bottom:0.7rem;">
+                  <a href="practitioner-detail.html?id=doc_wu" style="font-weight:600;color:var(--c-sage-700);text-decoration:none;">Dr. Jonathan Wu, Dipl. O.M.</a>
+                  <span>&bull;</span>
+                  <span>October 8, 2026</span>
+                </div>
+                <h3 class="blog-card-title" style="font-size:1.25rem;line-height:1.35;margin-bottom:0.75rem;">
+                  <a href="blog-detail.html?id=winter-kidney-yang-warming-herbs" style="color:inherit;text-decoration:none;">Nourishing Kidney Yang: Warming Teas, Soups, and Restorative Winter Rituals</a>
+                </h3>
+                <p class="blog-card-desc" style="font-size:0.92rem;line-height:1.6;color:var(--c-ink-body);margin-bottom:1.2rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                  Protect your deep vitality during cold months by fortifying Kidney Jing and Yang energy with roasted ginger, black sesame, and restorative warmth.
+                </p>
+                
+                <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:auto;">
+                  <a href="blog.html?tag=Winter%20Health" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Winter Health</a><a href="blog.html?tag=Kidney%20Yang" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Kidney Yang</a><a href="blog.html?tag=Warming%20Soups" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Warming Soups</a><a href="blog.html?tag=Herbal%20Tonics" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Herbal Tonics</a>
+                </div>
+
+                <div style="padding-top:1.1rem;border-top:1px solid var(--c-border-light);margin-top:auto;">
+                  <a href="blog-detail.html?id=winter-kidney-yang-warming-herbs" class="btn btn-secondary btn-block" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:0.4rem;font-weight:600;">
+                    Read Article <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card" data-id="gua-sha-lymphatic-myofascial-release" data-category="Bodywork & Cupping" data-tags="Gua Sha Myofascial Release Detox Circulation" data-title="the art of traditional gua sha: meridian scraping for cellular detox and flow" data-author="dr. meilin chen, dacm">
+              <div class="blog-card-media">
+                <a href="blog-detail.html?id=gua-sha-lymphatic-myofascial-release" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%;">
+                  <img src="assets/images/guasha_therapy.jpg" 
+                       alt="The Art of Traditional Gua Sha: Meridian Scraping for Cellular Detox and Flow" 
+                       class="blog-main-img" 
+                       loading="lazy" 
+                       onerror="this.onerror=null; this.src='assets/images/treatment_room.jpg';">
+                </a>
+                <span class="blog-category-tag">
+                  Bodywork & Cupping
+                </span>
+                <span class="blog-read-time-tag">
+                  6 min read
+                </span>
+              </div>
+              <div class="blog-card-body" style="padding:1.6rem;display:flex;flex-direction:column;flex-grow:1;">
+                <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--c-ink-muted);margin-bottom:0.7rem;">
+                  <a href="practitioner-detail.html?id=doc_chen" style="font-weight:600;color:var(--c-sage-700);text-decoration:none;">Dr. Meilin Chen, DACM</a>
+                  <span>&bull;</span>
+                  <span>September 24, 2026</span>
+                </div>
+                <h3 class="blog-card-title" style="font-size:1.25rem;line-height:1.35;margin-bottom:0.75rem;">
+                  <a href="blog-detail.html?id=gua-sha-lymphatic-myofascial-release" style="color:inherit;text-decoration:none;">The Art of Traditional Gua Sha: Meridian Scraping for Cellular Detox and Flow</a>
+                </h3>
+                <p class="blog-card-desc" style="font-size:0.92rem;line-height:1.6;color:var(--c-ink-body);margin-bottom:1.2rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                  How smooth jade and bian stone scraping along fascial planes stimulates microvascular perfusion, relieves chronic tension, and promotes lymphatic clearing.
+                </p>
+                
+                <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:auto;">
+                  <a href="blog.html?tag=Gua%20Sha" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Gua Sha</a><a href="blog.html?tag=Myofascial%20Release" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Myofascial Release</a><a href="blog.html?tag=Detox" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Detox</a><a href="blog.html?tag=Circulation" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Circulation</a>
+                </div>
+
+                <div style="padding-top:1.1rem;border-top:1px solid var(--c-border-light);margin-top:auto;">
+                  <a href="blog-detail.html?id=gua-sha-lymphatic-myofascial-release" class="btn btn-secondary btn-block" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:0.4rem;font-weight:600;">
+                    Read Article <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card" data-id="moxibustion-warm-healing-meridians" data-category="Bodywork & Cupping" data-tags="Moxibustion Heat Therapy Joint Care Cold Conditions" data-title="ancient moxibustion: harnessing mugwort heat therapy for deep joint vitality" data-author="dr. jonathan wu, dipl. o.m.">
+              <div class="blog-card-media">
+                <a href="blog-detail.html?id=moxibustion-warm-healing-meridians" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%;">
+                  <img src="assets/images/moxibustion.jpg" 
+                       alt="Ancient Moxibustion: Harnessing Mugwort Heat Therapy for Deep Joint Vitality" 
+                       class="blog-main-img" 
+                       loading="lazy" 
+                       onerror="this.onerror=null; this.src='assets/images/treatment_room.jpg';">
+                </a>
+                <span class="blog-category-tag">
+                  Bodywork & Cupping
+                </span>
+                <span class="blog-read-time-tag">
+                  7 min read
+                </span>
+              </div>
+              <div class="blog-card-body" style="padding:1.6rem;display:flex;flex-direction:column;flex-grow:1;">
+                <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--c-ink-muted);margin-bottom:0.7rem;">
+                  <a href="practitioner-detail.html?id=doc_wu" style="font-weight:600;color:var(--c-sage-700);text-decoration:none;">Dr. Jonathan Wu, Dipl. O.M.</a>
+                  <span>&bull;</span>
+                  <span>September 18, 2026</span>
+                </div>
+                <h3 class="blog-card-title" style="font-size:1.25rem;line-height:1.35;margin-bottom:0.75rem;">
+                  <a href="blog-detail.html?id=moxibustion-warm-healing-meridians" style="color:inherit;text-decoration:none;">Ancient Moxibustion: Harnessing Mugwort Heat Therapy for Deep Joint Vitality</a>
+                </h3>
+                <p class="blog-card-desc" style="font-size:0.92rem;line-height:1.6;color:var(--c-ink-body);margin-bottom:1.2rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                  Discover how the burning of aged Artemisia vulgaris (mugwort) penetrates deep into acupoints to dispel stubborn cold, ease arthritis, and boost white blood cell counts.
+                </p>
+                
+                <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:auto;">
+                  <a href="blog.html?tag=Moxibustion" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Moxibustion</a><a href="blog.html?tag=Heat%20Therapy" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Heat Therapy</a><a href="blog.html?tag=Joint%20Care" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Joint Care</a><a href="blog.html?tag=Cold%20Conditions" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Cold Conditions</a>
+                </div>
+
+                <div style="padding-top:1.1rem;border-top:1px solid var(--c-border-light);margin-top:auto;">
+                  <a href="blog-detail.html?id=moxibustion-warm-healing-meridians" class="btn btn-secondary btn-block" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:0.4rem;font-weight:600;">
+                    Read Article <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card" data-id="adaptogenic-herbs-stress-longevity" data-category="Herbal Medicine" data-tags="Adaptogens Immunity Reishi Mushroom Longevity" data-title="sacred adaptogens: reishi, astragalus, and ginseng for immune resilience" data-author="dr. jonathan wu, dipl. o.m.">
+              <div class="blog-card-media">
+                <a href="blog-detail.html?id=adaptogenic-herbs-stress-longevity" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%;">
+                  <img src="assets/images/herbal_prep.jpg" 
+                       alt="Sacred Adaptogens: Reishi, Astragalus, and Ginseng for Immune Resilience" 
+                       class="blog-main-img" 
+                       loading="lazy" 
+                       onerror="this.onerror=null; this.src='assets/images/treatment_room.jpg';">
+                </a>
+                <span class="blog-category-tag">
+                  Herbal Medicine
+                </span>
+                <span class="blog-read-time-tag">
+                  7 min read
+                </span>
+              </div>
+              <div class="blog-card-body" style="padding:1.6rem;display:flex;flex-direction:column;flex-grow:1;">
+                <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--c-ink-muted);margin-bottom:0.7rem;">
+                  <a href="practitioner-detail.html?id=doc_wu" style="font-weight:600;color:var(--c-sage-700);text-decoration:none;">Dr. Jonathan Wu, Dipl. O.M.</a>
+                  <span>&bull;</span>
+                  <span>September 22, 2026</span>
+                </div>
+                <h3 class="blog-card-title" style="font-size:1.25rem;line-height:1.35;margin-bottom:0.75rem;">
+                  <a href="blog-detail.html?id=adaptogenic-herbs-stress-longevity" style="color:inherit;text-decoration:none;">Sacred Adaptogens: Reishi, Astragalus, and Ginseng for Immune Resilience</a>
+                </h3>
+                <p class="blog-card-desc" style="font-size:0.92rem;line-height:1.6;color:var(--c-ink-body);margin-bottom:1.2rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                  Explore the clinical science and energetic virtues of sovereign tonic herbs that strengthen Wei Qi (defensive immunity) and modulate systemic stress.
+                </p>
+                
+                <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:auto;">
+                  <a href="blog.html?tag=Adaptogens" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Adaptogens</a><a href="blog.html?tag=Immunity" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Immunity</a><a href="blog.html?tag=Reishi%20Mushroom" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Reishi Mushroom</a><a href="blog.html?tag=Longevity" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Longevity</a>
+                </div>
+
+                <div style="padding-top:1.1rem;border-top:1px solid var(--c-border-light);margin-top:auto;">
+                  <a href="blog-detail.html?id=adaptogenic-herbs-stress-longevity" class="btn btn-secondary btn-block" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:0.4rem;font-weight:600;">
+                    Read Article <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card" data-id="art-of-herbal-dispensing-apothecary" data-category="Herbal Medicine" data-tags="Apothecary Granule Dispensary Formulation Quality Control" data-title="the classical apothecary: how formulas are compounded for unique constitutions" data-author="dr. evelyn zhao, dacm">
+              <div class="blog-card-media">
+                <a href="blog-detail.html?id=art-of-herbal-dispensing-apothecary" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%;">
+                  <img src="assets/images/herbal_apothecary.jpg" 
+                       alt="The Classical Apothecary: How Formulas are Compounded for Unique Constitutions" 
+                       class="blog-main-img" 
+                       loading="lazy" 
+                       onerror="this.onerror=null; this.src='assets/images/treatment_room.jpg';">
+                </a>
+                <span class="blog-category-tag">
+                  Herbal Medicine
+                </span>
+                <span class="blog-read-time-tag">
+                  6 min read
+                </span>
+              </div>
+              <div class="blog-card-body" style="padding:1.6rem;display:flex;flex-direction:column;flex-grow:1;">
+                <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--c-ink-muted);margin-bottom:0.7rem;">
+                  <a href="practitioner-detail.html?id=doc_zhao" style="font-weight:600;color:var(--c-sage-700);text-decoration:none;">Dr. Evelyn Zhao, DACM</a>
+                  <span>&bull;</span>
+                  <span>September 12, 2026</span>
+                </div>
+                <h3 class="blog-card-title" style="font-size:1.25rem;line-height:1.35;margin-bottom:0.75rem;">
+                  <a href="blog-detail.html?id=art-of-herbal-dispensing-apothecary" style="color:inherit;text-decoration:none;">The Classical Apothecary: How Formulas are Compounded for Unique Constitutions</a>
+                </h3>
+                <p class="blog-card-desc" style="font-size:0.92rem;line-height:1.6;color:var(--c-ink-body);margin-bottom:1.2rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                  Step inside our full-service clinical dispensary to see how centuries of herbal compounding wisdom blend with modern pharmaceutical purity testing.
+                </p>
+                
+                <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:auto;">
+                  <a href="blog.html?tag=Apothecary" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Apothecary</a><a href="blog.html?tag=Granule%20Dispensary" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Granule Dispensary</a><a href="blog.html?tag=Formulation" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Formulation</a><a href="blog.html?tag=Quality%20Control" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Quality Control</a>
+                </div>
+
+                <div style="padding-top:1.1rem;border-top:1px solid var(--c-border-light);margin-top:auto;">
+                  <a href="blog-detail.html?id=art-of-herbal-dispensing-apothecary" class="btn btn-secondary btn-block" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:0.4rem;font-weight:600;">
+                    Read Article <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card" data-id="sleep-insomnia-tcm-circadian-rhythm" data-category="TCM Fundamentals" data-tags="Sleep Health Shen Spirit Acupressure Anxiety Relief" data-title="restoring the shen: a tcm blueprint for deep, restorative sleep and serenity" data-author="dr. meilin chen, dacm">
+              <div class="blog-card-media">
+                <a href="blog-detail.html?id=sleep-insomnia-tcm-circadian-rhythm" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%;">
+                  <img src="assets/images/sleep_shen_harmony.jpg" 
+                       alt="Restoring the Shen: A TCM Blueprint for Deep, Restorative Sleep and Serenity" 
+                       class="blog-main-img" 
+                       loading="lazy" 
+                       onerror="this.onerror=null; this.src='assets/images/treatment_room.jpg';">
+                </a>
+                <span class="blog-category-tag">
+                  TCM Fundamentals
+                </span>
+                <span class="blog-read-time-tag">
+                  8 min read
+                </span>
+              </div>
+              <div class="blog-card-body" style="padding:1.6rem;display:flex;flex-direction:column;flex-grow:1;">
+                <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--c-ink-muted);margin-bottom:0.7rem;">
+                  <a href="practitioner-detail.html?id=doc_chen" style="font-weight:600;color:var(--c-sage-700);text-decoration:none;">Dr. Meilin Chen, DACM</a>
+                  <span>&bull;</span>
+                  <span>September 8, 2026</span>
+                </div>
+                <h3 class="blog-card-title" style="font-size:1.25rem;line-height:1.35;margin-bottom:0.75rem;">
+                  <a href="blog-detail.html?id=sleep-insomnia-tcm-circadian-rhythm" style="color:inherit;text-decoration:none;">Restoring the Shen: A TCM Blueprint for Deep, Restorative Sleep and Serenity</a>
+                </h3>
+                <p class="blog-card-desc" style="font-size:0.92rem;line-height:1.6;color:var(--c-ink-body);margin-bottom:1.2rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                  When the Shen (spirit) wanders at night, insomnia and racing thoughts emerge. Discover acupressure points, nighttime rituals, and heart-harmonizing herbs.
+                </p>
+                
+                <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:auto;">
+                  <a href="blog.html?tag=Sleep%20Health" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Sleep Health</a><a href="blog.html?tag=Shen%20Spirit" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Shen Spirit</a><a href="blog.html?tag=Acupressure" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Acupressure</a><a href="blog.html?tag=Anxiety%20Relief" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Anxiety Relief</a>
+                </div>
+
+                <div style="padding-top:1.1rem;border-top:1px solid var(--c-border-light);margin-top:auto;">
+                  <a href="blog-detail.html?id=sleep-insomnia-tcm-circadian-rhythm" class="btn btn-secondary btn-block" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:0.4rem;font-weight:600;">
+                    Read Article <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card" data-id="pulse-and-tongue-diagnosis-secrets" data-category="TCM Fundamentals" data-tags="Pulse Diagnosis Tongue Diagnosis Diagnostic Art Root Cause" data-title="the mirror within: what your pulse and tongue reveal about your health" data-author="dr. meilin chen, dacm">
+              <div class="blog-card-media">
+                <a href="blog-detail.html?id=pulse-and-tongue-diagnosis-secrets" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%;">
+                  <img src="assets/images/pulse_diagnosis.jpg" 
+                       alt="The Mirror Within: What Your Pulse and Tongue Reveal About Your Health" 
+                       class="blog-main-img" 
+                       loading="lazy" 
+                       onerror="this.onerror=null; this.src='assets/images/treatment_room.jpg';">
+                </a>
+                <span class="blog-category-tag">
+                  TCM Fundamentals
+                </span>
+                <span class="blog-read-time-tag">
+                  7 min read
+                </span>
+              </div>
+              <div class="blog-card-body" style="padding:1.6rem;display:flex;flex-direction:column;flex-grow:1;">
+                <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--c-ink-muted);margin-bottom:0.7rem;">
+                  <a href="practitioner-detail.html?id=doc_chen" style="font-weight:600;color:var(--c-sage-700);text-decoration:none;">Dr. Meilin Chen, DACM</a>
+                  <span>&bull;</span>
+                  <span>August 25, 2026</span>
+                </div>
+                <h3 class="blog-card-title" style="font-size:1.25rem;line-height:1.35;margin-bottom:0.75rem;">
+                  <a href="blog-detail.html?id=pulse-and-tongue-diagnosis-secrets" style="color:inherit;text-decoration:none;">The Mirror Within: What Your Pulse and Tongue Reveal About Your Health</a>
+                </h3>
+                <p class="blog-card-desc" style="font-size:0.92rem;line-height:1.6;color:var(--c-ink-body);margin-bottom:1.2rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">
+                  Learn how TCM physicians decode 28 distinct radial pulse qualities and tongue body color, shape, and coating to uncover hidden internal imbalances.
+                </p>
+                
+                <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem;margin-top:auto;">
+                  <a href="blog.html?tag=Pulse%20Diagnosis" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Pulse Diagnosis</a><a href="blog.html?tag=Tongue%20Diagnosis" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Tongue Diagnosis</a><a href="blog.html?tag=Diagnostic%20Art" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Diagnostic Art</a><a href="blog.html?tag=Root%20Cause" class="blog-tag-pill" style="background:var(--c-sage-50);color:var(--c-sage-700);padding:0.2rem 0.65rem;border-radius:var(--radius-full);font-size:0.75rem;font-weight:600;text-decoration:none;transition:background var(--t-fast);">#Root Cause</a>
+                </div>
+
+                <div style="padding-top:1.1rem;border-top:1px solid var(--c-border-light);margin-top:auto;">
+                  <a href="blog-detail.html?id=pulse-and-tongue-diagnosis-secrets" class="btn btn-secondary btn-block" style="text-align:center;display:flex;align-items:center;justify-content:center;gap:0.4rem;font-weight:600;">
+                    Read Article <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="section section-cream-alt">
+      <div class="container" style="max-width:680px;text-align:center;">
+        <span class="tcm-badge" style="margin-bottom:1rem;">Stay Connected</span>
+        <h2 style="margin-bottom:1rem;">Receive Monthly Seasonal Wellness Guides</h2>
+        <p style="font-size:1.05rem;color:var(--c-ink-body);line-height:1.7;margin-bottom:2rem;">
+          Learn which foods warm the body in autumn, acupressure points for seasonal allergies, and gentle Qi Gong movements for peaceful sleep.
+        </p>
+        <form class="newsletter-form" style="max-width:480px;margin:0 auto;">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address" required style="background:#fff;color:var(--c-ink-dark);border-color:var(--c-border);">
+          <button type="submit" class="newsletter-submit">Subscribe Free</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="logo-brand" style="margin-bottom:1.1rem;">
+            <span class="tcm-seal">和</span>
+            <div class="logo-text-wrap">
+              <span class="logo-title" style="color:#ffffff;font-size:1.55rem;">Harmony Spring</span>
+              <span class="logo-subtitle" style="color:var(--c-sage-300);font-size:0.7rem;letter-spacing:0.09em;text-transform:uppercase;font-weight:600;margin-top:2px;">Acupuncture &amp; Chinese Medicine</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            A sanctuary of Traditional Chinese Medicine dedicated to natural wellness, balance, and personalized patient care through ancient wisdom and modern integrity.
+          </p>
+          <div class="footer-info-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>742 Bamboo Grove Way, Suite 200, San Francisco, CA 94108</span>
+          </div>
+          <div class="footer-info-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>(555) 234-HEAL (4325)</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Treatments</h4>
+          <ul class="footer-links">
+            <li><a href="service-detail.html?service=acupuncture">Acupuncture Therapy</a></li>
+            <li><a href="service-detail.html?service=cupping">Cupping Therapy</a></li>
+            <li><a href="service-detail.html?service=tcm-consultation">TCM Comprehensive Intake</a></li>
+            <li><a href="service-detail.html?service=herbal-medicine">Herbal Dispensary</a></li>
+            <li><a href="service-detail.html?service=moxibustion">Moxibustion Therapy</a></li>
+            <li><a href="service-detail.html?service=wellness-consultation">Wellness Consultation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Clinic Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Traditional Clinic</a></li>
+            <li><a href="home-2.html">Modern Longevity</a></li>
+            <li><a href="about.html">About the Clinic</a></li>
+            <li><a href="practitioners.html">Our Practitioners</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+            <li><a href="login.html">Patient Portal Login</a></li>
+            <li><a href="register.html">New Patient Registration</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+            <li><a href="contact.html">Contact &amp; Directions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Seasonal TCM Journal</h4>
+          <p style="font-size:0.88rem;color:var(--c-sage-300);margin-bottom:1rem;line-height:1.6;">
+            Subscribe to our monthly newsletter for seasonal food energetics, Qi Gong exercises, and natural wellness tips.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="newsletter-submit">Subscribe</button>
+          </form>
+          <div style="margin-top:1.2rem;font-size:0.82rem;color:var(--c-sage-400);">
+            Clinic Hours:<br>
+            Mon – Fri: 8:30 AM – 6:00 PM<br>
+            Sat: 9:00 AM – 3:00 PM &bull; Sun: Closed
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-box">
+        <strong>Medical Disclaimer:</strong> The information provided on this website is for educational and informational purposes only and is not intended as a substitute for professional medical advice, diagnosis, or treatment. Traditional Chinese Medicine and acupuncture are designed to support and complement your overall healthcare. We make no claims of guaranteed cures. Always consult a licensed healthcare professional for serious medical conditions.
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Harmony Spring Acupuncture &amp; Chinese Medicine. All rights reserved.</div>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="privacy.html" style="color:inherit;">Privacy Policy (HIPAA)</a>
+          <a href="terms.html" style="color:inherit;">Terms &amp; Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('blogPostsGrid');
+      const searchInput = document.getElementById('blogSearchInput');
+      const searchClear = document.getElementById('blogSearchClear');
+      const resultStatus = document.getElementById('blogResultStatus');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = Array.from(grid.querySelectorAll('.blog-card'));
+
+      let activeCategory = 'all';
+      let searchQuery = '';
+
+      function normalize(str) {
+        return (str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      }
+
+      function matchCategory(postCategory, filterCategory) {
+        if (!filterCategory || filterCategory === 'all') return true;
+        const pNorm = normalize(postCategory);
+        const fNorm = normalize(filterCategory);
+        if (pNorm === fNorm) return true;
+        if (fNorm.includes('season') && pNorm.includes('season')) return true;
+        if ((fNorm.includes('bodywork') || fNorm.includes('cupping')) && (pNorm.includes('bodywork') || pNorm.includes('cupping'))) return true;
+        if (fNorm.includes('herb') && pNorm.includes('herb')) return true;
+        if (fNorm.includes('fundamental') && pNorm.includes('fundamental')) return true;
+        return pNorm.includes(fNorm) || fNorm.includes(pNorm);
+      }
+
+      function filterCards() {
+        const query = searchQuery.trim().toLowerCase();
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const cardCat = card.dataset.category || '';
+          const cardTitle = card.dataset.title || '';
+          const cardTags = card.dataset.tags || '';
+          const cardAuthor = card.dataset.author || '';
+          const cardText = card.textContent.toLowerCase();
+
+          const catMatches = matchCategory(cardCat, activeCategory);
+          const queryMatches = !query || cardTitle.includes(query) || cardTags.toLowerCase().includes(query) || cardAuthor.includes(query) || cardText.includes(query);
+
+          if (catMatches && queryMatches) {
+            card.style.display = '';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Update search clear button
+        if (searchClear) {
+          searchClear.style.display = query ? 'block' : 'none';
+        }
+
+        // Empty state handling
+        let emptyNotice = document.getElementById('blogEmptyNotice');
+        if (visibleCount === 0) {
+          if (!emptyNotice) {
+            emptyNotice = document.createElement('div');
+            emptyNotice.id = 'blogEmptyNotice';
+            emptyNotice.style.cssText = 'grid-column:1/-1;text-align:center;padding:3.5rem 1rem;background:var(--c-cream-card);border:1px dashed var(--c-border);border-radius:var(--radius-lg);';
+            grid.appendChild(emptyNotice);
+          }
+          emptyNotice.style.display = 'block';
+          emptyNotice.innerHTML = `
+            <div style="font-size:2.5rem;margin-bottom:0.8rem;color:var(--c-sage-400);">🌿</div>
+            <h3 style="font-size:1.35rem;margin-bottom:0.5rem;color:var(--c-ink-dark);">No Articles Found</h3>
+            <p style="color:var(--c-ink-muted);margin-bottom:1.5rem;max-width:440px;margin-left:auto;margin-right:auto;">
+              We couldn't find any articles matching "${escapeHtml(searchQuery)}" ${activeCategory !== 'all' ? 'in this category' : ''}.
+            </p>
+            <button type="button" id="resetBlogFiltersBtn" class="btn btn-secondary btn-sm" style="display:inline-flex;align-items:center;gap:0.4rem;">
+              <span>&olarr;</span> Reset All Filters
+            </button>
+          `;
+          const resetBtn = document.getElementById('resetBlogFiltersBtn');
+          if (resetBtn) {
+            resetBtn.addEventListener('click', () => {
+              if (searchInput) searchInput.value = '';
+              searchQuery = '';
+              setActiveCategory('all');
+            });
+          }
+        } else if (emptyNotice) {
+          emptyNotice.style.display = 'none';
+        }
+
+        // Update result status message
+        if (resultStatus) {
+          if (query || activeCategory !== 'all') {
+            resultStatus.style.display = 'block';
+            let msg = `Showing ${visibleCount} of ${cards.length} articles`;
+            if (activeCategory !== 'all') msg += ` in "${activeCategory}"`;
+            if (query) msg += ` matching "${escapeHtml(query)}"`;
+            resultStatus.textContent = msg;
+          } else {
+            resultStatus.style.display = 'none';
+          }
+        }
+      }
+
+      function escapeHtml(text) {
+        return (text || '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m]));
+      }
+
+      function setActiveCategory(cat) {
+        activeCategory = cat;
+        filterBtns.forEach(btn => {
+          if (btn.dataset.category === cat) {
+            btn.classList.add('active');
+          } else {
+            btn.classList.remove('active');
+          }
+        });
+        filterCards();
+      }
+
+      // Filter button event listeners
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          setActiveCategory(btn.dataset.category);
+        });
+      });
+
+      // Search input event listeners
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          searchQuery = e.target.value;
+          filterCards();
+        });
+      }
+
+      if (searchClear) {
+        searchClear.addEventListener('click', () => {
+          if (searchInput) searchInput.value = '';
+          searchQuery = '';
+          filterCards();
+          if (searchInput) searchInput.focus();
+        });
+      }
+
+      // URL query params initialization (?category=..., ?tag=..., ?q=...)
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlCat = urlParams.get('category');
+      const urlTag = urlParams.get('tag');
+      const urlQ = urlParams.get('q');
+
+      if (urlCat) {
+        const foundBtn = Array.from(filterBtns).find(b => matchCategory(b.dataset.category, urlCat));
+        if (foundBtn) {
+          setActiveCategory(foundBtn.dataset.category);
+        }
+      } else if (urlTag) {
+        if (searchInput) searchInput.value = urlTag;
+        searchQuery = urlTag;
+        filterCards();
+      } else if (urlQ) {
+        if (searchInput) searchInput.value = urlQ;
+        searchQuery = urlQ;
+        filterCards();
+      }
+    });
+  </script>
+</body>
+</html>

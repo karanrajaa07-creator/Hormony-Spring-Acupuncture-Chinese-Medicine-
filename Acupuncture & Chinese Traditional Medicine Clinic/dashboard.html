@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Dashboard | Harmony Spring Acupuncture & Chinese Medicine</title>
+  <meta name="description" content="Secure patient health portal. View your clinical treatment plan, session milestones, appointments, and authorized herbal prescriptions.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231b5e50'><circle cx='12' cy='12' r='10'/><path d='M12 2a10 10 0 0 0 0 20 5 5 0 0 0 0-10 5 5 0 0 1 0-10z' fill='%23f9f8f5'/></svg>">
+</head>
+<body style="background-color:#f7f9f7;">
+
+  <!-- Sticky Header Wrapper -->
+  <div class="sticky-header-wrapper">
+    <!-- Portal Navigation Header -->
+    <header class="header" style="background:#ffffff;border-bottom:1px solid var(--c-border);">
+      <div class="container" style="max-width:100%;padding:0 2rem;">
+        <div class="navbar" style="height:70px;">
+          <a href="index.html" class="logo-brand">
+            <span class="tcm-seal" title="Harmony">和</span>
+            <div class="logo-text-wrap">
+              <span class="logo-title" style="font-size:1.35rem;">Harmony Spring</span>
+              <span class="logo-subtitle">Patient Care Portal</span>
+            </div>
+          </a>
+
+          <div style="display:flex;align-items:center;gap:1.5rem;">
+            <a href="index.html" class="nav-link" style="font-size:0.88rem;">&larr; Public Website</a>
+            <button onclick="handleLogout()" class="btn btn-secondary btn-sm" style="display:inline-flex;align-items:center;gap:0.4rem;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+              Sign Out
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Dashboard Container -->
+  <div class="dashboard-layout">
+    <!-- Desktop & Tablet Sidebar -->
+    <aside class="dashboard-sidebar">
+      <div class="dashboard-user-card">
+        <div class="user-avatar-circle" id="dashUserAvatar">SC</div>
+        <div class="user-info-text">
+          <strong id="dashSidebarName">Sarah Chen</strong>
+          <span id="dashSidebarRole">Verified Patient</span>
+        </div>
+      </div>
+
+      <ul class="sidebar-menu">
+        <li>
+          <a class="sidebar-menu-link active" data-tab="overview">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            Overview
+          </a>
+        </li>
+        <li>
+          <a class="sidebar-menu-link" href="booking.html" data-tab="book">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            Book Appointment
+          </a>
+        </li>
+        <li>
+          <a class="sidebar-menu-link" data-tab="appointments">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            My Appointments
+          </a>
+        </li>
+        <li>
+          <a class="sidebar-menu-link" data-tab="treatment-plan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            Treatment Plan
+          </a>
+        </li>
+        <li>
+          <a class="sidebar-menu-link" data-tab="prescriptions">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            Herbal Prescriptions
+          </a>
+        </li>
+        <li>
+          <a class="sidebar-menu-link" data-tab="history">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            Treatment History
+          </a>
+        </li>
+        <li>
+          <a class="sidebar-menu-link" data-tab="notifications">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            Notifications
+            <span class="sidebar-badge">1</span>
+          </a>
+        </li>
+        <li>
+          <a class="sidebar-menu-link" data-tab="profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            My Profile
+          </a>
+        </li>
+        <li>
+          <a class="sidebar-menu-link" data-tab="settings">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            Account Settings
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <button onclick="handleLogout()" class="btn btn-secondary btn-block btn-sm" style="color:#c93b2b;">
+          Sign Out of Portal
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="dashboard-main">
+      <!-- Top Title Header -->
+      <div class="dashboard-header-row">
+        <div class="dashboard-title-area">
+          <h1>Welcome, <span id="dashWelcomeName">Patient</span></h1>
+          <p>Here is your current Traditional Chinese Medicine clinical treatment summary.</p>
+        </div>
+        <div style="display:flex;gap:0.8rem;align-items:center;">
+          <button class="btn btn-primary btn-sm" onclick="switchToTab('book')">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Book New Session
+          </button>
+          <button class="btn btn-secondary btn-sm" onclick="switchToTab('prescriptions')">
+            View Prescriptions
+          </button>
+        </div>
+      </div>
+
+      <!-- ===================================================================
+           TAB 1: OVERVIEW
+           =================================================================== -->
+      <section id="tab-overview" class="dashboard-view-panel active">
+        <!-- Stats Widgets -->
+        <div class="overview-stats-grid">
+          <div class="stat-widget">
+            <div class="stat-widget-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div class="stat-widget-info">
+              <span>Next Upcoming Visit</span>
+              <div id="widgetNextApt" style="font-size:0.95rem;color:var(--c-ink-dark);margin-top:0.2rem;">Loading...</div>
+            </div>
+          </div>
+
+          <div class="stat-widget">
+            <div class="stat-widget-icon" style="background:#e8f4f1;color:var(--c-jade-600);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="stat-widget-info">
+              <span>Treatment Progress</span>
+              <div id="widgetActivePlan" style="font-size:0.95rem;color:var(--c-ink-dark);margin-top:0.2rem;">Loading...</div>
+            </div>
+          </div>
+
+          <div class="stat-widget">
+            <div class="stat-widget-icon" style="background:#fdf6ec;color:var(--c-gold);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div class="stat-widget-info">
+              <span>Active Herbal Formula</span>
+              <div id="widgetActiveRx" style="font-size:0.95rem;color:var(--c-ink-dark);margin-top:0.2rem;">Loading...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upcoming Appointments Card -->
+        <div class="dash-card">
+          <div class="dash-card-header">
+            <h3>Upcoming Appointments</h3>
+            <button class="btn btn-secondary btn-sm" onclick="switchToTab('appointments')">View All</button>
+          </div>
+          <div id="overviewUpcomingContainer">
+            <p style="color:var(--c-ink-muted);">Loading upcoming visits...</p>
+          </div>
+        </div>
+
+        <!-- Treatment Plan Quick Glance -->
+        <div class="dash-card">
+          <div class="dash-card-header">
+            <h3>Active Clinical Treatment Plan</h3>
+            <button class="btn btn-secondary btn-sm" onclick="switchToTab('treatment-plan')">Full Plan Details &rarr;</button>
+          </div>
+          <div style="background:var(--c-sage-50);border:1px solid var(--c-sage-200);border-radius:var(--radius-md);padding:1.6rem;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.8rem;flex-wrap:wrap;gap:0.5rem;">
+              <strong style="font-size:1.15rem;color:var(--c-sage-900);">Cervicogenic Migraine &amp; Qi Stagnation Harmonization</strong>
+              <span class="status-badge status-confirmed">Session 5 of 8 Completed</span>
+            </div>
+            <p style="font-size:0.92rem;color:var(--c-ink-body);line-height:1.6;margin-bottom:1rem;">
+              <strong>Supervising Doctor:</strong> Dr. Meilin Chen &bull; Pattern: Liver Qi Stagnation with Ascending Liver Yang.
+            </p>
+            <div class="tp-progress-bar-wrap" style="height:10px;background:#e2ded7;margin-bottom:0.8rem;">
+              <div class="tp-progress-bar-fill" style="width: 63%;"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:0.82rem;color:var(--c-ink-muted);">
+              <span>Started: Sept 10, 2026</span>
+              <span>Next Session: Oct 15, 2026 (Acupuncture + Light Cupping)</span>
+              <span>Target: Nov 05, 2026</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 2: BOOK APPOINTMENT (DIRECT IN-PORTAL)
+           =================================================================== -->
+      <section id="tab-book" class="dashboard-view-panel">
+        <div class="dash-card">
+          <div class="dash-card-header">
+            <h2>Book an Appointment</h2>
+            <span style="font-size:0.85rem;color:var(--c-ink-muted);">Real-time clinic availability</span>
+          </div>
+          <p style="font-size:0.95rem;color:var(--c-ink-body);margin-bottom:1.5rem;">
+            Select your preferred treatment service, practitioner, and an open time slot.
+          </p>
+          <div style="text-align:center;padding:2rem 1rem;background:var(--c-sage-50);border:1px solid var(--c-sage-200);border-radius:var(--radius-md);">
+            <p style="margin-bottom:1.5rem;font-size:1.05rem;">Our full interactive booking system is ready for you with live conflict protection.</p>
+            <a href="booking.html" class="btn btn-primary btn-lg">
+              Open Interactive Appointment Booking Wizard &rarr;
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 3: MY APPOINTMENTS
+           =================================================================== -->
+      <section id="tab-appointments" class="dashboard-view-panel">
+        <div class="dash-card">
+          <div class="dash-card-header">
+            <h2>Upcoming Appointments</h2>
+            <button class="btn btn-primary btn-sm" onclick="switchToTab('book')">+ Schedule New Visit</button>
+          </div>
+          <div id="appointmentsUpcomingContainer">
+            <p style="color:var(--c-ink-muted);">Loading appointments...</p>
+          </div>
+        </div>
+
+        <div class="dash-card">
+          <div class="dash-card-header">
+            <h3>Past Appointment History</h3>
+          </div>
+          <div id="appointmentsPastContainer">
+            <p style="color:var(--c-ink-muted);">Loading past visit history...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 4: TREATMENT PLAN
+           =================================================================== -->
+      <section id="tab-treatment-plan" class="dashboard-view-panel">
+        <div id="treatmentPlanViewContainer">
+          <p style="color:var(--c-ink-muted);">Loading clinical treatment plan...</p>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 5: HERBAL PRESCRIPTIONS
+           =================================================================== -->
+      <section id="tab-prescriptions" class="dashboard-view-panel">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;">
+          <div>
+            <h2 style="font-size:1.8rem;margin-bottom:0.2rem;">Authorized Herbal Prescriptions</h2>
+            <p style="font-size:0.88rem;color:var(--c-ink-muted);margin:0;">
+              Formulated by your attending master herbalist and prepared by our GMP dispensary.
+            </p>
+          </div>
+          <button class="btn btn-secondary btn-sm" onclick="window.print()">Print Prescriptions</button>
+        </div>
+        <div id="prescriptionsViewContainer">
+          <p style="color:var(--c-ink-muted);">Loading prescriptions...</p>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 6: TREATMENT HISTORY (CLINICAL LOG)
+           =================================================================== -->
+      <section id="tab-history" class="dashboard-view-panel">
+        <div class="dash-card">
+          <div class="dash-card-header">
+            <h2>Chronological Clinical Treatment Records</h2>
+            <span style="font-size:0.85rem;color:var(--c-sage-700);font-weight:600;">Confidential Medical Records</span>
+          </div>
+          <p style="font-size:0.92rem;color:var(--c-ink-body);margin-bottom:1.5rem;">
+            Detailed notes and acupoint protocols documented by attending practitioners after each treatment session.
+          </p>
+
+          <div style="display:flex;flex-direction:column;gap:1.5rem;">
+            <!-- Visit Log 1 -->
+            <div style="border:1px solid var(--c-border-light);border-radius:var(--radius-md);padding:1.5rem;background:#fff;">
+              <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;flex-wrap:wrap;">
+                <strong style="font-size:1.1rem;color:var(--c-ink-dark);">Session 5: Electro-Acupuncture &amp; Auricular Seeds</strong>
+                <span style="font-size:0.85rem;color:var(--c-ink-muted);">October 08, 2026 &bull; Dr. Meilin Chen</span>
+              </div>
+              <p style="font-size:0.88rem;color:var(--c-ink-body);line-height:1.6;margin-bottom:0.8rem;">
+                <strong>Acupoints Needle Selection:</strong> GB20 (Fengchi), LI4 (Hegu), LR3 (Taichong), Taiyang extra point. 2Hz continuous electro-stimulation for 25 minutes. Ear seeds applied at Shen Men and Occiput.
+              </p>
+              <div style="background:var(--c-sage-50);padding:0.75rem 1rem;border-radius:var(--radius-sm);font-size:0.82rem;color:var(--c-sage-800);">
+                <strong>Outcome:</strong> Patient reported 0 migraine events over the preceding 7 days. Neck range of motion restored to 80 degrees.
+              </div>
+            </div>
+
+            <!-- Visit Log 2 -->
+            <div style="border:1px solid var(--c-border-light);border-radius:var(--radius-md);padding:1.5rem;background:#fff;">
+              <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;flex-wrap:wrap;">
+                <strong style="font-size:1.1rem;color:var(--c-ink-dark);">Session 4: Myofascial Fire Cupping</strong>
+                <span style="font-size:0.85rem;color:var(--c-ink-muted);">October 01, 2026 &bull; Dr. Meilin Chen</span>
+              </div>
+              <p style="font-size:0.88rem;color:var(--c-ink-body);line-height:1.6;margin-bottom:0.8rem;">
+                <strong>Technique:</strong> Gliding cupping along upper trapezius and levator scapulae followed by stationary retention along Bladder meridian (BL11–BL15).
+              </p>
+              <div style="background:var(--c-sage-50);padding:0.75rem 1rem;border-radius:var(--radius-sm);font-size:0.82rem;color:var(--c-sage-800);">
+                <strong>Outcome:</strong> Moderate Sha marks emerged, indicating resolving blood stagnation. Trapezius spasm released markedly.
+              </div>
+            </div>
+
+            <!-- Visit Log 3 -->
+            <div style="border:1px solid var(--c-border-light);border-radius:var(--radius-md);padding:1.5rem;background:#fff;">
+              <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;flex-wrap:wrap;">
+                <strong style="font-size:1.1rem;color:var(--c-ink-dark);">Session 1: Initial TCM Evaluation &amp; Intake</strong>
+                <span style="font-size:0.85rem;color:var(--c-ink-muted);">September 10, 2026 &bull; Dr. Meilin Chen</span>
+              </div>
+              <p style="font-size:0.88rem;color:var(--c-ink-body);line-height:1.6;margin-bottom:0.8rem;">
+                <strong>Diagnostic Findings:</strong> Radial pulse wiry (Xian) and rapid. Tongue body dusky red with thin yellowish coat in center. Diagnostic pattern: Liver Qi Stagnation with Ascending Liver Yang. Formulated 8-session clinical care roadmap.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 7: NOTIFICATIONS
+           =================================================================== -->
+      <section id="tab-notifications" class="dashboard-view-panel">
+        <div class="dash-card">
+          <div class="dash-card-header">
+            <h2>Notifications &amp; Follow-up Reminders</h2>
+          </div>
+          <div id="notificationsViewContainer">
+            <p style="color:var(--c-ink-muted);">Loading notifications...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 8: MY PROFILE
+           =================================================================== -->
+      <section id="tab-profile" class="dashboard-view-panel">
+        <div class="dash-card" style="max-width:760px;">
+          <div class="dash-card-header">
+            <h2>Personal &amp; Medical Intake Profile</h2>
+            <span style="font-size:0.85rem;color:var(--c-sage-700);font-weight:600;">Confidential Records</span>
+          </div>
+
+          <form id="profileEditForm">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;" class="concept-grid">
+              <div class="form-group">
+                <label class="form-label" for="profileName">Full Legal Name</label>
+                <input type="text" id="profileName" class="form-control" disabled style="background:#f4f7f4;">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="profileEmail">Email Address</label>
+                <input type="email" id="profileEmail" class="form-control" disabled style="background:#f4f7f4;">
+              </div>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;" class="concept-grid">
+              <div class="form-group">
+                <label class="form-label" for="profilePhone">Phone Number</label>
+                <input type="tel" id="profilePhone" class="form-control" placeholder="(555) 234-5678" pattern="[0-9+\-()\s]*" inputmode="tel" title="Please enter numbers and phone symbols only">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="profileDob">Date of Birth</label>
+                <input type="date" id="profileDob" class="form-control" disabled style="background:#f4f7f4;">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="profileEmergency">Emergency Contact Name &amp; Phone</label>
+              <input type="text" id="profileEmergency" class="form-control" placeholder="e.g. David Chen (+1 555-890-1122)">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="profileAllergies">Documented Drug &amp; Herbal Allergies</label>
+              <input type="text" id="profileAllergies" class="form-control" placeholder="e.g. Sulfa antibiotics, Bee pollen">
+              <span style="font-size:0.75rem;color:var(--c-ink-muted);margin-top:0.3rem;display:block;">
+                All herbal prescriptions are systematically cross-checked against this list.
+              </span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="profileHealthNotes">General Health Background &amp; Sensitivities</label>
+              <textarea id="profileHealthNotes" class="form-control" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save Profile Updates</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           TAB 9: ACCOUNT SETTINGS
+           =================================================================== -->
+      <section id="tab-settings" class="dashboard-view-panel">
+        <div class="dash-card" style="max-width:760px;">
+          <div class="dash-card-header">
+            <h2>Account Security &amp; Preferences</h2>
+          </div>
+
+          <h3 style="font-size:1.2rem;margin-bottom:1rem;">Communication Preferences</h3>
+          <div class="form-check">
+            <input type="checkbox" id="prefSms" checked>
+            <label for="prefSms">Send automated SMS appointment reminders 24 hours prior</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="prefEmail" checked>
+            <label for="prefEmail">Send herbal refill notices and seasonal dietary newsletters</label>
+          </div>
+
+          <div style="border-top:1px solid var(--c-border-light);padding-top:1.5rem;margin-top:1.5rem;">
+            <h3 style="font-size:1.2rem;margin-bottom:0.5rem;">Data &amp; Privacy</h3>
+            <p style="font-size:0.88rem;color:var(--c-ink-muted);margin-bottom:1rem;">
+              You have the right to export your clinical treatment history and herbal records at any time.
+            </p>
+            <button type="button" class="btn btn-secondary btn-sm" onclick="showToast('Health data export archive generated.', 'success')">
+              Download Clinical Records Summary (PDF)
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Reschedule Modal -->
+  <div class="modal-overlay" id="rescheduleModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 style="margin:0;">Reschedule Appointment</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <p style="font-size:0.9rem;color:var(--c-ink-muted);margin-bottom:1.2rem;">
+        Choose your new preferred date and available time slot according to clinic availability.
+      </p>
+
+      <div class="form-group">
+        <label class="form-label" for="rescheduleDateInput">New Appointment Date</label>
+        <input type="date" id="rescheduleDateInput" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="rescheduleTimeSelect">Available Time Slot</label>
+        <select id="rescheduleTimeSelect" class="form-select" required>
+          <option value="">Checking slots...</option>
+        </select>
+      </div>
+
+      <div style="display:flex;justify-content:flex-end;gap:0.8rem;margin-top:1.5rem;">
+        <button type="button" class="btn btn-secondary modal-close-btn">Cancel</button>
+        <button type="button" id="confirmRescheduleBtn" class="btn btn-primary">Confirm Reschedule</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cancel Confirmation Modal -->
+  <div class="modal-overlay" id="cancelModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 style="margin:0;color:#c93b2b;">Cancel Appointment</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <p style="font-size:0.92rem;color:var(--c-ink-body);line-height:1.6;margin-bottom:1rem;">
+        Are you sure you wish to cancel this appointment session?
+      </p>
+      <div style="background:var(--c-cream-muted);padding:1rem;border-radius:var(--radius-sm);font-size:0.85rem;color:var(--c-ink-muted);margin-bottom:1.5rem;">
+        <strong>Clinic Policy:</strong> Appointments cancelled with at least 24 hours notice incur no fee. For same-day emergencies, please contact our office directly.
+      </div>
+      <div style="display:flex;justify-content:flex-end;gap:0.8rem;">
+        <button type="button" class="btn btn-secondary modal-close-btn">Keep Appointment</button>
+        <button type="button" id="confirmCancelBtn" class="btn btn-terracotta">Yes, Cancel Appointment</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
