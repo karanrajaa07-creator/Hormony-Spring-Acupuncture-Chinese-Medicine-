@@ -1,0 +1,28 @@
+# Dependency directories
+node_modules/
+.npm/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment and local files
+.env
+.env.local
+.env.*.local
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary and scratch files
+scratch/
+*.tmp
+*.bak
+
+# IDE & Editor directories
+.vscode/
+.idea/
+.antigravity/
+.system_generated/
