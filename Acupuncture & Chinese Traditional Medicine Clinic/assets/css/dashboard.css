@@ -1,0 +1,775 @@
+/* ==========================================================================
+   PATIENT DASHBOARD SPECIFIC STYLES
+   ========================================================================== */
+
+.dashboard-layout {
+  display: flex;
+  min-height: calc(100vh - 80px);
+  background-color: #f7f9f7;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+  width: 280px;
+  background-color: #ffffff;
+  border-right: 1px solid var(--c-border);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition: all var(--t-smooth);
+  z-index: 99;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  align-self: flex-start;
+  overflow-y: auto;
+}
+
+.dashboard-user-card {
+  padding: 1.8rem 1.5rem;
+  border-bottom: 1px solid var(--c-border-light);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(to bottom, var(--c-sage-50), #ffffff);
+}
+
+.user-avatar-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-full);
+  background: var(--c-jade-500);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(27, 94, 80, 0.2);
+}
+
+.user-info-text strong {
+  display: block;
+  font-size: 1rem;
+  color: var(--c-ink-dark);
+  line-height: 1.2;
+}
+
+.user-info-text span {
+  font-size: 0.8rem;
+  color: var(--c-ink-muted);
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 1.2rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex-grow: 1;
+}
+
+.sidebar-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--c-ink-body);
+  transition: all var(--t-fast);
+  cursor: pointer;
+}
+
+.sidebar-menu-link:hover {
+  background-color: var(--c-sage-50);
+  color: var(--c-jade-500);
+}
+
+.sidebar-menu-link.active {
+  background-color: var(--c-sage-100);
+  color: var(--c-jade-600);
+  font-weight: 600;
+}
+
+.sidebar-menu-link svg {
+  width: 20px;
+  height: 20px;
+  color: currentColor;
+  flex-shrink: 0;
+}
+
+.sidebar-badge {
+  margin-left: auto;
+  background-color: var(--c-terracotta);
+  color: #fff;
+  font-size: 0.72rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+}
+
+.sidebar-footer {
+  padding: 1.2rem;
+  border-top: 1px solid var(--c-border-light);
+}
+
+/* Dashboard Main Content Area */
+.dashboard-main {
+  flex-grow: 1;
+  padding: 2.5rem 3rem;
+  overflow-y: auto;
+}
+
+.dashboard-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.2rem;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.dashboard-title-area h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.dashboard-title-area p {
+  color: var(--c-ink-muted);
+  font-size: 0.95rem;
+}
+
+/* Overview Widgets Grid */
+.overview-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-widget {
+  background: #ffffff;
+  padding: 1.6rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--c-border-light);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  transition: all var(--t-smooth);
+}
+
+.stat-widget:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.stat-widget-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--c-sage-50);
+  color: var(--c-jade-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.stat-widget-info span {
+  font-size: 0.82rem;
+  color: var(--c-ink-muted);
+  display: block;
+}
+
+.stat-widget-info strong {
+  font-size: 1.4rem;
+  font-family: var(--font-serif);
+  color: var(--c-ink-dark);
+}
+
+/* Sections Containers */
+.dashboard-view-panel {
+  display: none;
+}
+
+.dashboard-view-panel.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card Container */
+.dash-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--c-border-light);
+  box-shadow: var(--shadow-sm);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dash-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--c-border-light);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dash-card-header h2, .dash-card-header h3 {
+  font-size: 1.45rem;
+  margin: 0;
+}
+
+/* Appointment Table & Cards */
+.appointments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.appointment-item-card {
+  background: #ffffff;
+  border: 1px solid var(--c-border-light);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  transition: all var(--t-fast);
+}
+
+.appointment-item-card:hover {
+  border-color: var(--c-sage-300);
+  box-shadow: var(--shadow-sm);
+}
+
+.apt-left-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.apt-date-badge {
+  background: var(--c-sage-50);
+  border: 1px solid var(--c-sage-200);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 1rem;
+  text-align: center;
+  min-width: 90px;
+}
+
+.apt-date-badge .apt-month {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--c-sage-700);
+  font-weight: 700;
+}
+
+.apt-date-badge .apt-day {
+  display: block;
+  font-size: 1.5rem;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--c-ink-dark);
+  line-height: 1;
+}
+
+.apt-details-text h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.apt-details-text p {
+  font-size: 0.88rem;
+  color: var(--c-ink-muted);
+  margin: 0;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.8rem;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.status-confirmed {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-completed {
+  background: #e0f2f1;
+  color: #00695c;
+}
+
+.status-cancelled {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.status-rescheduled {
+  background: #fff8e1;
+  color: #f57f17;
+}
+
+.apt-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Treatment Plan Progress Styles */
+.treatment-plan-hero {
+  background: linear-gradient(135deg, var(--c-sage-800) 0%, var(--c-jade-700) 100%);
+  color: #ffffff;
+  padding: 2.2rem 2.5rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.tp-progress-bar-wrap {
+  margin-top: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  height: 12px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.tp-progress-bar-fill {
+  background: var(--c-gold);
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 1s ease;
+}
+
+.sessions-timeline {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-top: 2rem;
+}
+
+.sessions-timeline::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 11px;
+  width: 2px;
+  background: var(--c-border);
+}
+
+.timeline-step-item {
+  position: relative;
+  margin-bottom: 2.2rem;
+}
+
+.timeline-step-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2.5rem;
+  top: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  background: #ffffff;
+  border: 2px solid var(--c-sage-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--c-sage-700);
+}
+
+.timeline-step-item.completed .timeline-dot {
+  background: var(--c-jade-500);
+  border-color: var(--c-jade-500);
+  color: #ffffff;
+}
+
+.timeline-step-item.active .timeline-dot {
+  background: var(--c-terracotta);
+  border-color: var(--c-terracotta);
+  color: #ffffff;
+  box-shadow: 0 0 0 4px var(--c-terracotta-light);
+}
+
+.timeline-card {
+  background: #ffffff;
+  border: 1px solid var(--c-border-light);
+  border-radius: var(--radius-md);
+  padding: 1.4rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.timeline-card h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-card-meta {
+  font-size: 0.84rem;
+  color: var(--c-ink-muted);
+  margin-bottom: 0.75rem;
+}
+
+/* Herbal Prescription Official Layout */
+.prescription-doc-card {
+  background: #fff;
+  border: 2px solid var(--c-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  position: relative;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+}
+
+.rx-top-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--c-sage-200);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.rx-stamp-seal {
+  width: 58px;
+  height: 58px;
+  background: #a93826;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.1;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.herbs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.92rem;
+}
+
+.herbs-table th, .herbs-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--c-border-light);
+}
+
+.herbs-table th {
+  background: var(--c-sage-50);
+  font-weight: 600;
+  color: var(--c-sage-900);
+}
+
+.rx-instruction-box {
+  background: var(--c-gold-light);
+  border-left: 4px solid var(--c-gold);
+  padding: 1.2rem 1.4rem;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+  font-size: 0.92rem;
+}
+
+.rx-allergy-alert {
+  background: #fdf2f2;
+  border-left: 4px solid #c93b2b;
+  padding: 1rem 1.2rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  font-size: 0.88rem;
+  color: #7d1a12;
+}
+
+/* Modal Popup */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--t-smooth);
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-dialog {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  max-width: 540px;
+  width: 100%;
+  padding: 2.2rem;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--c-border-light);
+}
+
+.modal-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--c-ink-muted);
+  cursor: pointer;
+}
+
+/* Responsive Dashboard */
+@media (max-width: 900px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+  .dashboard-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--c-border);
+    position: static;
+    top: auto;
+    height: auto;
+  }
+  .dashboard-main {
+    padding: 1.8rem 1.4rem;
+  }
+  .sidebar-menu {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 0.8rem;
+  }
+  .sidebar-menu-link {
+    white-space: nowrap;
+  }
+}
+
+/* ==========================================================================
+   DASHBOARD DARK MODE THEME
+   ========================================================================== */
+[data-theme="dark"] .dashboard-layout {
+  background-color: #09100c;
+}
+
+[data-theme="dark"] .dashboard-sidebar {
+  background-color: #0f1813;
+  border-color: #23372b;
+}
+
+[data-theme="dark"] .dashboard-user-card {
+  background: linear-gradient(to bottom, #14221a, #0f1813);
+  border-bottom-color: #23372b;
+}
+
+[data-theme="dark"] .user-info-text strong {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .user-info-text span {
+  color: #a8c4b4;
+}
+
+[data-theme="dark"] .sidebar-menu-link {
+  color: #d2e2d7;
+}
+
+[data-theme="dark"] .sidebar-menu-link:hover {
+  background-color: #192a20;
+  color: #55f0cb;
+}
+
+[data-theme="dark"] .sidebar-menu-link.active {
+  background-color: rgba(53, 192, 163, 0.18);
+  color: #55f0cb;
+}
+
+[data-theme="dark"] .dash-card {
+  background-color: #131e18;
+  border: 1px solid #23372b;
+}
+
+[data-theme="dark"] .stat-widget {
+  background-color: #131e18;
+  border-color: #23372b;
+}
+
+[data-theme="dark"] .stat-widget-icon {
+  background-color: #182a20 !important;
+  color: #55f0cb !important;
+}
+
+[data-theme="dark"] .stat-widget-info span {
+  color: #a4c4b2;
+}
+
+[data-theme="dark"] .stat-widget-info strong,
+[data-theme="dark"] #widgetNextApt,
+[data-theme="dark"] #widgetActivePlan,
+[data-theme="dark"] #widgetActiveRx {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .appointment-item-card {
+  background-color: #131e18;
+  border-color: #23372b;
+  color: #d2e2d7;
+}
+
+[data-theme="dark"] .appointment-item-card:hover {
+  border-color: #35c0a3;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .apt-date-badge {
+  background-color: #1a2c22;
+  border-color: #2d4737;
+}
+
+[data-theme="dark"] .apt-date-badge .apt-month {
+  color: #55f0cb;
+}
+
+[data-theme="dark"] .apt-date-badge .apt-day {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .apt-details-text h4 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .apt-details-text p {
+  color: #a4c4b2;
+}
+
+[data-theme="dark"] .timeline-card {
+  background-color: #131e18;
+  border-color: #23372b;
+  color: #d2e2d7;
+}
+
+[data-theme="dark"] .timeline-card h4 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .timeline-card-meta {
+  color: #a4c4b2;
+}
+
+[data-theme="dark"] .prescription-doc-card {
+  background-color: #131e18;
+  border-color: #23372b;
+  color: #d2e2d7;
+}
+
+[data-theme="dark"] .rx-top-banner {
+  border-bottom-color: #23372b;
+}
+
+[data-theme="dark"] .rx-allergy-alert {
+  background: rgba(201, 59, 43, 0.16);
+  border-left-color: #f87171;
+  color: #fecaca;
+}
+
+[data-theme="dark"] .status-confirmed {
+  background: rgba(46, 125, 50, 0.25);
+  color: #86efac;
+  border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+[data-theme="dark"] .status-completed {
+  background: rgba(0, 105, 92, 0.25);
+  color: #5eead4;
+  border: 1px solid rgba(45, 212, 191, 0.3);
+}
+
+[data-theme="dark"] .status-cancelled {
+  background: rgba(198, 40, 40, 0.25);
+  color: #fca5a5;
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+[data-theme="dark"] .status-rescheduled {
+  background: rgba(245, 127, 23, 0.25);
+  color: #fde047;
+  border: 1px solid rgba(250, 204, 21, 0.3);
+}
+
+[data-theme="dark"] .herbs-table th {
+  background: #192a20;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .herbs-table td {
+  border-bottom-color: #23372b;
+  color: #d2e2d7;
+}
+
+[data-theme="dark"] .rx-instruction-box {
+  background: rgba(226, 190, 117, 0.12);
+  border-left-color: #e2be75;
+  color: #f0e6d2;
+}
+
+[data-theme="dark"] .modal-dialog {
+  background: #131e18;
+  border: 1px solid #23372b;
+  color: #d2e2d7;
+}
+
+[data-theme="dark"] .modal-header {
+  border-bottom-color: #23372b;
+}
+
+[data-theme="dark"] .modal-close-btn {
+  color: #a8c4b4;
+}
+
+

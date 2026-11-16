@@ -1,0 +1,21 @@
+{
+  "name": "harmony-spring-tcm-clinic",
+  "version": "1.0.0",
+  "description": "Harmony Spring Acupuncture & Traditional Chinese Medicine Clinic",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "build": "echo 'Static site ready for Vercel deployment'"
+  },
+  "keywords": [
+    "acupuncture",
+    "traditional-chinese-medicine",
+    "tcm",
+    "clinic",
+    "wellness"
+  ],
+  "author": "Harmony Spring TCM Clinic",
+  "license": "ISC"
+}
+
