@@ -3284,13 +3284,13 @@ body.dark-mode .dropdown-item-badge.badge-modern {
    ========================================================================== */
 @media (max-width: 1280px) {
   .nav-links {
-    gap: clamp(0.45rem, 0.85vw, 0.95rem);
+    gap: clamp(0.35rem, 0.68vw, 0.8rem);
     margin: 0 auto;
     padding: 0;
   }
   .nav-link {
-    font-size: 0.84rem;
-    padding: 0.4rem 0.15rem;
+    font-size: 0.82rem;
+    padding: 0.35rem 0.1rem;
   }
   .logo-title {
     font-size: 1.25rem;
@@ -3305,20 +3305,20 @@ body.dark-mode .dropdown-item-badge.badge-modern {
   }
   .btn-book-nav {
     height: 38px;
-    padding: 0 0.9rem;
-    font-size: 0.82rem;
+    padding: 0 0.85rem;
+    font-size: 0.81rem;
   }
   .nav-actions {
-    gap: 0.45rem;
+    gap: 0.4rem;
     margin-left: 0;
   }
   .nav-controls {
-    gap: 0.3rem;
+    gap: 0.25rem;
     margin-left: 0;
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1180px) {
   .nav-links, .nav-actions .nav-portal-btn, .nav-actions #navAuthSlot {
     display: none !important;
   }
